@@ -1,4 +1,5 @@
-**This version is modified for use with AAUs AI-LAB** \\
+# **This version is modified for use with AAUs AI-LAB** 
+
 AI-LAB is a cluster which is slurm based. More information can be found at: https://hpc.aau.dk/ai-lab/
 To access AI-LAB it is necessary to be on the same network or use a vpn to the network.
 A guide for this can be found at: https://www.en.its.aau.dk/instructions/VPN#set-up-vpn-on-windows-and-mac-
