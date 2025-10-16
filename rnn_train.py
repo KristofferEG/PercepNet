@@ -186,10 +186,10 @@ def train():
     trainset_ratio = 1 # 1 - validation set ration
     train_size = int(trainset_ratio * len(dataset))
     test_size = len(dataset) - train_size
-    batch_size=10
+    batch_size=10  # Restored from 64 to 10 - better for small dataset
     train_dataset, test_dataset = torch.utils.data.random_split(dataset, [train_size, test_size])
     
-    train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+    train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=1, pin_memory=False)
     #validation_loader = torch.utils.data.DataLoader(test_dataset, batch_size=batch_size, shuffle=True)
 
     model = PercepNet()
@@ -318,19 +318,72 @@ class Trainer(object):
         logging.info("Finished training.")
 
     def save_checkpoint(self, checkpoint_path):
-        """Save checkpoint."""
-        torch.save(self.model.state_dict(), checkpoint_path)
+        """Save checkpoint.
+
+        Saves a dictionary containing model state, optimizer state, and
+        current training counters (steps, epochs) so training can be resumed
+        transparently after a requeue.
+        """
+        # Prepare state dict that includes optimizer and counters
+        if self.args.distributed:
+            model_state = self.model.module.state_dict()
+        else:
+            model_state = self.model.state_dict()
+
+        state = {
+            "model_state_dict": model_state,
+            "optimizer_state_dict": self.optimizer.state_dict() if self.optimizer is not None else None,
+            "steps": self.steps,
+            "epochs": self.epochs,
+        }
+
+        torch.save(state, checkpoint_path)
 
     def load_checkpoint(self, checkpoint_path):
         """Load checkpoint.
         Args:
             checkpoint_path (str): Checkpoint path to be loaded.
         """
-        state_dict = torch.load(checkpoint_path, map_location="cpu")
-        if self.args.distributed:
-            self.model.module.load_state_dict(state_dict)
+        logging.info(f"Loading checkpoint from: {checkpoint_path}")
+        
+        if not os.path.exists(checkpoint_path):
+            raise FileNotFoundError(f"Checkpoint file not found: {checkpoint_path}")
+        
+        checkpoint = torch.load(checkpoint_path, map_location="cpu")
+        logging.info(f"Checkpoint loaded, type: {type(checkpoint)}")
+
+        # New-style checkpoint: dict with model_state_dict and optimizer_state_dict
+        if isinstance(checkpoint, dict) and "model_state_dict" in checkpoint:
+            logging.info("Loading new-style checkpoint with model_state_dict")
+            model_state = checkpoint["model_state_dict"]
+            if self.args.distributed:
+                self.model.module.load_state_dict(model_state)
+            else:
+                self.model.load_state_dict(model_state)
+
+            # restore optimizer if available
+            if "optimizer_state_dict" in checkpoint and checkpoint["optimizer_state_dict"] is not None and self.optimizer is not None:
+                try:
+                    self.optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
+                    logging.info("Optimizer state restored successfully")
+                except Exception as e:
+                    # In some cases optimizer state may be incompatible; ignore but warn
+                    logging.warning(f"Failed to fully restore optimizer state from checkpoint: {e}")
+
+            steps = checkpoint.get("steps", 0)
+            epochs = checkpoint.get("epochs", 0)
+            logging.info(f"Restored training state: steps={steps}, epochs={epochs}")
+            return steps, epochs
+
+        # Backward-compatible: checkpoint is a raw model state_dict
         else:
-            self.model.load_state_dict(state_dict)
+            logging.info("Loading backward-compatible checkpoint (raw model state_dict)")
+            if self.args.distributed:
+                self.model.module.load_state_dict(checkpoint)
+            else:
+                self.model.load_state_dict(checkpoint)
+            logging.info("Model state restored, but no training counters found (starting from step 0)")
+            return 0, 0
     
     def _train_step(self, batch):
         """Train model one step."""
@@ -463,8 +516,9 @@ class Trainer(object):
 
     def _check_save_interval(self):
         if self.steps % self.config["save_interval_steps"] == 0:
+            # Save unified checkpoint (.pt) containing model + optimizer + counters
             self.save_checkpoint(
-                os.path.join(self.config["out_dir"], f"checkpoint-{self.steps}steps.pkl")
+                os.path.join(self.config["out_dir"], f"checkpoint-{self.steps}steps.pt")
             )
             logging.info(f"Successfully saved checkpoint @ {self.steps} steps.")
 
@@ -490,6 +544,12 @@ class Trainer(object):
 
 def main():
     """Run training process."""
+    # Configure logging
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s (%(module)s:%(lineno)d) %(levelname)s: %(message)s",
+    )
+    
     parser = argparse.ArgumentParser(
         description="Train PercepNet (See detail in rnn_train.py)."
     )
@@ -636,9 +696,62 @@ def main():
     )
 
     # load pretrained parameters from checkpoint
+    # If user provided a pretrain checkpoint, load it. Otherwise try to auto-detect
+    # latest checkpoint in out_dir for resuming after requeue.
     if len(args.pretrain) != 0:
-        trainer.load_checkpoint(args.pretrain)
+        steps, epochs = trainer.load_checkpoint(args.pretrain)
+        trainer.steps = steps
+        trainer.epochs = epochs
         logging.info(f"Successfully load parameters from {args.pretrain}.")
+    else:
+        # auto-detect latest checkpoint file in out_dir
+        # consider both modern .pt checkpoints and older .pkl ones
+        logging.info(f"Searching for checkpoints in {args.out_dir}")
+        
+        # Ensure output directory exists and is accessible
+        os.makedirs(args.out_dir, exist_ok=True)
+        
+        # Verify directory is writable
+        if not os.access(args.out_dir, os.W_OK):
+            logging.error(f"Output directory {args.out_dir} is not writable!")
+        else:
+            logging.info(f"Output directory {args.out_dir} is accessible and writable")
+        
+        pt_ckps = glob.glob(os.path.join(args.out_dir, "checkpoint-*steps.pt"))
+        pkl_ckps = glob.glob(os.path.join(args.out_dir, "checkpoint-*steps.pkl"))
+        
+        logging.info(f"Found {len(pt_ckps)} .pt checkpoints and {len(pkl_ckps)} .pkl checkpoints")
+        
+        # Combine and sort by step number (extracted from filename) rather than alphabetically
+        all_ckps = pt_ckps + pkl_ckps
+        if len(all_ckps) > 0:
+            import re
+            
+            # Sort by actual step number for proper ordering
+            def extract_step_num(ckp_path):
+                m = re.search(r"checkpoint-(\d+)steps", os.path.basename(ckp_path))
+                return int(m.group(1)) if m else 0
+            
+            all_ckps = sorted(all_ckps, key=extract_step_num)
+            latest = all_ckps[-1]
+            
+            logging.info(f"Latest checkpoint: {latest}")
+            
+            try:
+                steps, epochs = trainer.load_checkpoint(latest)
+                # if checkpoint didn't include counters, try to parse steps from filename
+                if steps == 0:
+                    m = re.search(r"checkpoint-(\d+)steps", os.path.basename(latest))
+                    if m:
+                        steps = int(m.group(1))
+                trainer.steps = steps
+                trainer.epochs = epochs
+                logging.info(f"Successfully auto-resumed from checkpoint {latest} (steps={steps}, epochs={epochs}).")
+            except Exception as e:
+                logging.error(f"Failed to load checkpoint {latest}: {e}")
+                logging.info("Starting training from scratch.")
+        else:
+            logging.info("No existing checkpoints found. Starting training from scratch.")
     # run training loop
 
     try:

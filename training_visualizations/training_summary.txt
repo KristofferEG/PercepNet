@@ -1,0 +1,21 @@
+PercepNet Training Summary Report
+==================================================
+
+Metric: eval/total_loss
+  Total logged points: 193
+  Training steps: 1000 to 100000
+  Final value: 0.101543
+  Best value: 0.779832 (higher better) or 0.097864 (lower better)
+  Mean: 0.251151
+  Std: 0.161711
+  Change from start: -84.75%
+
+Metric: train/total_loss
+  Total logged points: 193
+  Training steps: 1000 to 100000
+  Final value: 0.109425
+  Best value: 0.675124 (higher better) or 0.100839 (lower better)
+  Mean: 0.256885
+  Std: 0.147962
+  Change from start: -83.78%
+

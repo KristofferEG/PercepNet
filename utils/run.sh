@@ -39,7 +39,7 @@ h5_dev_dir="h5_dev"
 out_dir="exp_erbfix_x30_snr45_rmax99"
 #out_dir="exp_test"
 model_filename="model.pt"
-train_size_per_batch=2000
+train_size_per_batch=4000
 config="DNS_Challenge.yaml"
 #pretrain="/home/seonghun/develop/PercepNet/training_set_sept12_500h/exp_erbfix_band30times_nopretrain/checkpoint-10000steps.pkl"
 
@@ -136,6 +136,9 @@ fi
 ###################################################
 
 if [ "${stage}" -le 4 ] && [ "${stop_stage}" -ge 4 ]; then
+   # Ensure output directory exists
+   mkdir -p ${PRJ_ROOT}/${dataset_dir}/${out_dir}
+   
    echo "'--train_length_size', '${train_size_per_batch}', '--train_filelist_path', '${PRJ_ROOT}/${dataset_dir}/${feature_dir}/train.txt', \
                         '--dev_filelist_path', '${PRJ_ROOT}/${dataset_dir}/${feature_dir}/dev.txt', \
                         '--out_dir', '${PRJ_ROOT}/${dataset_dir}/${out_dir}', '--config', '${config}'"

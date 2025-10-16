@@ -1,0 +1,98 @@
+Starting PercepNet training at Fri Oct 10 14:44:53 CEST 2025
+Job ID: 151936
+Node: ailab-l4-02
+Working directory: /ceph/home/student.aau.dk/ar01mf/PercepNet
+Checking GPU availability:
+Fri Oct 10 14:44:54 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.82.07              Driver Version: 580.82.07      CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA L4                      On  |   00000000:01:00.0 Off |                    0 |
+| N/A   44C    P8             17W /   72W |       0MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA L4                      On  |   00000000:02:00.0 Off |                    0 |
+| N/A   40C    P8             16W /   72W |       0MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA L4                      On  |   00000000:41:00.0 Off |                    0 |
+| N/A   39C    P8             16W /   72W |       0MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA L4                      On  |   00000000:61:00.0 Off |                    0 |
+| N/A   57C    P0             32W /   72W |    1230MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   4  NVIDIA L4                      On  |   00000000:81:00.0 Off |                    0 |
+| N/A   40C    P8             16W /   72W |       0MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   5  NVIDIA L4                      On  |   00000000:82:00.0 Off |                    0 |
+| N/A   40C    P8             16W /   72W |       0MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   6  NVIDIA L4                      On  |   00000000:A1:00.0 Off |                    0 |
+| N/A   38C    P8             16W /   72W |       0MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   7  NVIDIA L4                      On  |   00000000:C1:00.0 Off |                    0 |
+| N/A   62C    P0             37W /   72W |    1576MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    3   N/A  N/A          107012      C   /usr/bin/python                        1222MiB |
+|    7   N/A  N/A          108103      C   /usr/bin/python                        1566MiB |
++-----------------------------------------------------------------------------------------+
+CUDA available: True
+CUDA device count: 1
+Current CUDA device: 0
+CUDA device name: NVIDIA L4
+Running PercepNet training using run.sh (Stage 4)
+'--train_length_size', '4000', '--train_filelist_path', '/ceph/home/student.aau.dk/ar01mf/PercepNet/utils/../training_set_sept12_500h/features/train.txt',                         '--dev_filelist_path', '/ceph/home/student.aau.dk/ar01mf/PercepNet/utils/../training_set_sept12_500h/features/dev.txt',                         '--out_dir', '/ceph/home/student.aau.dk/ar01mf/PercepNet/utils/../training_set_sept12_500h/exp_erbfix_x30_snr45_rmax99', '--config', 'DNS_Challenge.yaml'
+1  sequences
+1  sequences
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage
+writeimage

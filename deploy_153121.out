@@ -1,0 +1,157 @@
+Starting PercepNet deployment at Wed Oct 15 10:42:10 CEST 2025
+Job ID: 153121
+Node: ailab-l4-08
+Working directory: /ceph/home/student.aau.dk/ar01mf/PercepNet
+Checking GPU availability:
+Wed Oct 15 10:42:11 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.82.07              Driver Version: 580.82.07      CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA L4                      On  |   00000000:01:00.0 Off |                    0 |
+| N/A   67C    P0             49W /   72W |     400MiB /  23034MiB |     39%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA L4                      On  |   00000000:02:00.0 Off |                    0 |
+| N/A   40C    P8             16W /   72W |       0MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA L4                      On  |   00000000:41:00.0 Off |                    0 |
+| N/A   39C    P8             16W /   72W |       0MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA L4                      On  |   00000000:61:00.0 Off |                    0 |
+| N/A   38C    P8             16W /   72W |       0MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   4  NVIDIA L4                      On  |   00000000:81:00.0 Off |                    0 |
+| N/A   38C    P8             16W /   72W |       0MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   5  NVIDIA L4                      On  |   00000000:82:00.0 Off |                    0 |
+| N/A   40C    P8             16W /   72W |       0MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   6  NVIDIA L4                      On  |   00000000:A1:00.0 Off |                    0 |
+| N/A   38C    P8             16W /   72W |       0MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   7  NVIDIA L4                      On  |   00000000:C1:00.0 Off |                    0 |
+| N/A   39C    P8             16W /   72W |       0MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A         2133070      C   /usr/bin/python3                        392MiB |
++-----------------------------------------------------------------------------------------+
+Converting .pt checkpoint to .pkl format...
+Loading checkpoint: training_set_sept12_500h/exp_erbfix_x30_snr45_rmax99/checkpoint-100000steps.pt
+Extracted model_state_dict with 30 keys
+Saved model weights to: training_set_sept12_500h/exp_erbfix_x30_snr45_rmax99/checkpoint-100000steps.pkl
+Conversion completed successfully!
+Dumping PyTorch weights to C++ header...
+printing layer fc
+printing layer conv1
+const Conv1DLayer conv1 = {
+   conv1_bias,
+   conv1_weights,
+   128, 5, 512, ACTIVATION_RELU
+};
+
+
+printing layer conv2
+const Conv1DLayer conv2 = {
+   conv2_bias,
+   conv2_weights,
+   512, 3, 512, ACTIVATION_TANH
+};
+
+
+printing layer gru1
+const GRULayer gru1 = {
+   gru1_bias,
+   gru1_weights,
+   gru1_recurrent_weights,
+   512, 512, ACTIVATION_TANH, 1
+};
+
+
+printing layer gru2
+const GRULayer gru2 = {
+   gru2_bias,
+   gru2_weights,
+   gru2_recurrent_weights,
+   512, 512, ACTIVATION_TANH, 1
+};
+
+
+printing layer gru3
+const GRULayer gru3 = {
+   gru3_bias,
+   gru3_weights,
+   gru3_recurrent_weights,
+   512, 512, ACTIVATION_TANH, 1
+};
+
+
+printing layer gru_gb
+const GRULayer gru_gb = {
+   gru_gb_bias,
+   gru_gb_weights,
+   gru_gb_recurrent_weights,
+   512, 512, ACTIVATION_TANH, 1
+};
+
+
+printing layer gru_rb
+const GRULayer gru_rb = {
+   gru_rb_bias,
+   gru_rb_weights,
+   gru_rb_recurrent_weights,
+   1024, 128, ACTIVATION_TANH, 1
+};
+
+
+printing layer fc_gb
+printing layer fc_rb
+done
+Building C++ inference binary...
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /ceph/home/student.aau.dk/ar01mf/PercepNet/bin
+[  5%] Built target gtest
+[ 10%] Built target gmock
+[ 15%] Built target gmock_main
+[ 21%] Built target gtest_main
+Scanning dependencies of target percepNet_lib
+[ 23%] Building CXX object src/CMakeFiles/percepNet_lib.dir/nnet_data.cpp.o
+[ 26%] Linking CXX static library libpercepNet_lib.a
+[ 44%] Built target percepNet_lib
+Scanning dependencies of target percepNet_run
+[ 47%] Building CXX object src/CMakeFiles/percepNet_run.dir/nnet_data.cpp.o
+[ 50%] Linking CXX executable percepNet_run
+[ 68%] Built target percepNet_run
+Scanning dependencies of target percepNet
+[ 71%] Building CXX object src/CMakeFiles/percepNet.dir/nnet_data.cpp.o
+[ 73%] Linking CXX executable percepNet
+[ 92%] Built target percepNet
+[ 94%] Linking CXX executable percepNet_tst
+[100%] Built target percepNet_tst
+Testing inference...
+✓ Test input file found: sampledata/speech/speech.pcm
+Input file size: 5.5M
+Running correct inference test with percepNet_run...
+✓ Inference test successful!
+Output file size: 5.5M
+Input vs Output comparison:
+  Input:  5.5M sampledata/speech/speech.pcm
+  Output: 5.5M deployment_output.pcm
+Deployment completed at Wed Oct 15 10:45:36 CEST 2025
+Exit code: 0
