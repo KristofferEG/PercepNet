@@ -157,3 +157,13 @@ sampledata_vctk_DEMAND
 training.h5
 
 DNS-Challenge
+
+#Kristoffers additions
+# Audio analysis and output files
+audio_analysis.png
+feature_test.raw
+percepnet_output.pcm
+
+# Generated C files
+nnet_data.c
+src/nnet_data.cpp
