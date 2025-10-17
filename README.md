@@ -1,3 +1,21 @@
+# **This version is modified for use with AAUs AI-LAB** 
+
+AI-LAB is a cluster which is slurm based. More information can be found at: https://hpc.aau.dk/ai-lab/
+To access AI-LAB it is necessary to be on the same network or use a vpn to the network.
+A guide for this can be found at: https://www.en.its.aau.dk/instructions/VPN#set-up-vpn-on-windows-and-mac-
+
+
+Some files to explore:
+-  train_percepnet.sh # This file is used for setting up the training as a task in AI-LAB
+-  train_percepnet_with_requeuing.sh # This adds requeueing to the above script, which is necessary for longer training times
+-  train_percepnet_with_tensorboard.sh # An attempt unsuccesfull attempt at adding tensorboard to the above script.
+-  deploy_simple # Performs step 6 and 7 in the build guide. It dumps the trained weights into a c++ header and runs the inference.
+-  PercepNet_Container.def # This is the Container/Docker used. It contains the used libraries, compilers, etc.
+-  visualize_training.sh # Since the attempt at using tensorboard was unsuccesfull, a short script to visualize the training results was constructed. This runs that script.
+
+Remember to use sbatch when starting jobs, as it does not require you to maintain a connection to the HPC while it is training.
+
+
 # PercepNet
 Unofficial implementation of PercepNet: A Perceptually-Motivated Approach for Low-Complexity, Real-Time Enhancement of Fullband Speech described in https://arxiv.org/abs/2008.04259
 

@@ -1,0 +1,1039 @@
+2025-10-14 11:17:45,525 (rnn_train:633) INFO: batch_size = 64
+2025-10-14 11:17:45,525 (rnn_train:633) INFO: pin_memory = True
+2025-10-14 11:17:45,525 (rnn_train:633) INFO: num_workers = 4
+2025-10-14 11:17:45,525 (rnn_train:633) INFO: allow_cache = True
+2025-10-14 11:17:45,525 (rnn_train:633) INFO: train_max_steps = 100000
+2025-10-14 11:17:45,526 (rnn_train:633) INFO: save_interval_steps = 1000
+2025-10-14 11:17:45,526 (rnn_train:633) INFO: eval_interval_steps = 1000
+2025-10-14 11:17:45,526 (rnn_train:633) INFO: log_interval_steps = 1000
+2025-10-14 11:17:45,526 (rnn_train:633) INFO: train_length_size = 4000
+2025-10-14 11:17:45,526 (rnn_train:633) INFO: train_filelist_path = /ceph/home/student.aau.dk/ar01mf/PercepNet/utils/../training_set_sept12_500h/features/train.txt
+2025-10-14 11:17:45,526 (rnn_train:633) INFO: dev_filelist_path = /ceph/home/student.aau.dk/ar01mf/PercepNet/utils/../training_set_sept12_500h/features/dev.txt
+2025-10-14 11:17:45,526 (rnn_train:633) INFO: pretrain = 
+2025-10-14 11:17:45,526 (rnn_train:633) INFO: rank = 0
+2025-10-14 11:17:45,526 (rnn_train:633) INFO: out_dir = /ceph/home/student.aau.dk/ar01mf/PercepNet/utils/../training_set_sept12_500h/exp_erbfix_x30_snr45_rmax99
+2025-10-14 11:17:45,526 (rnn_train:633) INFO: config = DNS_Challenge.yaml
+2025-10-14 11:17:45,526 (rnn_train:633) INFO: distributed = False
+2025-10-14 11:17:45,871 (rnn_train:644) INFO: The number of training files = 1.
+2025-10-14 11:17:45,872 (rnn_train:645) INFO: The number of training files = 1.
+2025-10-14 11:17:45,877 (rnn_train:709) INFO: Searching for checkpoints in /ceph/home/student.aau.dk/ar01mf/PercepNet/utils/../training_set_sept12_500h/exp_erbfix_x30_snr45_rmax99
+2025-10-14 11:17:45,882 (rnn_train:718) INFO: Output directory /ceph/home/student.aau.dk/ar01mf/PercepNet/utils/../training_set_sept12_500h/exp_erbfix_x30_snr45_rmax99 is accessible and writable
+2025-10-14 11:17:45,895 (rnn_train:723) INFO: Found 94 .pt checkpoints and 45 .pkl checkpoints
+2025-10-14 11:17:45,896 (rnn_train:738) INFO: Latest checkpoint: /ceph/home/student.aau.dk/ar01mf/PercepNet/utils/../training_set_sept12_500h/exp_erbfix_x30_snr45_rmax99/checkpoint-99000steps.pt
+2025-10-14 11:17:45,896 (rnn_train:347) INFO: Loading checkpoint from: /ceph/home/student.aau.dk/ar01mf/PercepNet/utils/../training_set_sept12_500h/exp_erbfix_x30_snr45_rmax99/checkpoint-99000steps.pt
+2025-10-14 11:17:45,948 (rnn_train:353) INFO: Checkpoint loaded, type: <class 'dict'>
+2025-10-14 11:17:45,948 (rnn_train:357) INFO: Loading new-style checkpoint with model_state_dict
+2025-10-14 11:17:45,961 (rnn_train:368) INFO: Optimizer state restored successfully
+2025-10-14 11:17:45,961 (rnn_train:375) INFO: Restored training state: steps=99000, epochs=89998
+2025-10-14 11:17:45,966 (rnn_train:749) INFO: Successfully auto-resumed from checkpoint /ceph/home/student.aau.dk/ar01mf/PercepNet/utils/../training_set_sept12_500h/exp_erbfix_x30_snr45_rmax99/checkpoint-99000steps.pt (steps=99000, epochs=89998).
+[train]:  99%|█████████▉| 99000/100000 [00:00<?, ?it/s][train]:  99%|█████████▉| 99001/100000 [00:02<47:26,  2.85s/it]2025-10-14 11:17:48,852 (rnn_train:429) INFO: (Steps: 99001) Finished 89999 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99002/100000 [00:03<25:28,  1.53s/it]2025-10-14 11:17:49,475 (rnn_train:429) INFO: (Steps: 99002) Finished 90000 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99003/100000 [00:04<18:21,  1.10s/it]2025-10-14 11:17:50,068 (rnn_train:429) INFO: (Steps: 99003) Finished 90001 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99004/100000 [00:04<15:03,  1.10it/s]2025-10-14 11:17:50,676 (rnn_train:429) INFO: (Steps: 99004) Finished 90002 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99005/100000 [00:05<13:19,  1.24it/s]2025-10-14 11:17:51,292 (rnn_train:429) INFO: (Steps: 99005) Finished 90003 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99006/100000 [00:05<12:08,  1.36it/s]2025-10-14 11:17:51,894 (rnn_train:429) INFO: (Steps: 99006) Finished 90004 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99007/100000 [00:06<11:22,  1.45it/s]2025-10-14 11:17:52,481 (rnn_train:429) INFO: (Steps: 99007) Finished 90005 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99008/100000 [00:07<10:46,  1.53it/s]2025-10-14 11:17:53,059 (rnn_train:429) INFO: (Steps: 99008) Finished 90006 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99009/100000 [00:07<10:20,  1.60it/s]2025-10-14 11:17:53,643 (rnn_train:429) INFO: (Steps: 99009) Finished 90007 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99010/100000 [00:08<10:08,  1.63it/s]2025-10-14 11:17:54,223 (rnn_train:429) INFO: (Steps: 99010) Finished 90008 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99011/100000 [00:08<10:03,  1.64it/s]2025-10-14 11:17:54,823 (rnn_train:429) INFO: (Steps: 99011) Finished 90009 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99012/100000 [00:09<09:59,  1.65it/s]2025-10-14 11:17:55,421 (rnn_train:429) INFO: (Steps: 99012) Finished 90010 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99013/100000 [00:09<09:46,  1.68it/s]2025-10-14 11:17:55,982 (rnn_train:429) INFO: (Steps: 99013) Finished 90011 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99014/100000 [00:10<09:37,  1.71it/s]2025-10-14 11:17:56,548 (rnn_train:429) INFO: (Steps: 99014) Finished 90012 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99015/100000 [00:11<09:35,  1.71it/s]2025-10-14 11:17:57,131 (rnn_train:429) INFO: (Steps: 99015) Finished 90013 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99016/100000 [00:11<09:34,  1.71it/s]2025-10-14 11:17:57,714 (rnn_train:429) INFO: (Steps: 99016) Finished 90014 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99017/100000 [00:12<09:36,  1.71it/s]2025-10-14 11:17:58,304 (rnn_train:429) INFO: (Steps: 99017) Finished 90015 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99018/100000 [00:12<09:31,  1.72it/s]2025-10-14 11:17:58,883 (rnn_train:429) INFO: (Steps: 99018) Finished 90016 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99019/100000 [00:13<09:27,  1.73it/s]2025-10-14 11:17:59,443 (rnn_train:429) INFO: (Steps: 99019) Finished 90017 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99020/100000 [00:14<09:33,  1.71it/s]2025-10-14 11:18:00,046 (rnn_train:429) INFO: (Steps: 99020) Finished 90018 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99021/100000 [00:14<09:41,  1.69it/s]2025-10-14 11:18:00,671 (rnn_train:429) INFO: (Steps: 99021) Finished 90019 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99022/100000 [00:15<09:41,  1.68it/s]2025-10-14 11:18:01,265 (rnn_train:429) INFO: (Steps: 99022) Finished 90020 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99023/100000 [00:15<09:36,  1.70it/s]2025-10-14 11:18:01,840 (rnn_train:429) INFO: (Steps: 99023) Finished 90021 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99024/100000 [00:16<09:35,  1.70it/s]2025-10-14 11:18:02,422 (rnn_train:429) INFO: (Steps: 99024) Finished 90022 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99025/100000 [00:16<09:28,  1.71it/s]2025-10-14 11:18:03,000 (rnn_train:429) INFO: (Steps: 99025) Finished 90023 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99026/100000 [00:17<09:28,  1.71it/s]2025-10-14 11:18:03,578 (rnn_train:429) INFO: (Steps: 99026) Finished 90024 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99027/100000 [00:18<09:26,  1.72it/s]2025-10-14 11:18:04,157 (rnn_train:429) INFO: (Steps: 99027) Finished 90025 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99028/100000 [00:18<09:26,  1.72it/s]2025-10-14 11:18:04,740 (rnn_train:429) INFO: (Steps: 99028) Finished 90026 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99029/100000 [00:19<09:39,  1.67it/s]2025-10-14 11:18:05,379 (rnn_train:429) INFO: (Steps: 99029) Finished 90027 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99030/100000 [00:19<09:45,  1.66it/s]2025-10-14 11:18:05,986 (rnn_train:429) INFO: (Steps: 99030) Finished 90028 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99031/100000 [00:20<09:37,  1.68it/s]2025-10-14 11:18:06,567 (rnn_train:429) INFO: (Steps: 99031) Finished 90029 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99032/100000 [00:21<09:28,  1.70it/s]2025-10-14 11:18:07,131 (rnn_train:429) INFO: (Steps: 99032) Finished 90030 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99033/100000 [00:21<09:29,  1.70it/s]2025-10-14 11:18:07,728 (rnn_train:429) INFO: (Steps: 99033) Finished 90031 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99034/100000 [00:22<09:22,  1.72it/s]2025-10-14 11:18:08,293 (rnn_train:429) INFO: (Steps: 99034) Finished 90032 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99035/100000 [00:22<09:28,  1.70it/s]2025-10-14 11:18:08,900 (rnn_train:429) INFO: (Steps: 99035) Finished 90033 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99036/100000 [00:23<09:34,  1.68it/s]2025-10-14 11:18:09,517 (rnn_train:429) INFO: (Steps: 99036) Finished 90034 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99037/100000 [00:24<09:28,  1.69it/s]2025-10-14 11:18:10,094 (rnn_train:429) INFO: (Steps: 99037) Finished 90035 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99038/100000 [00:24<09:27,  1.69it/s]2025-10-14 11:18:10,686 (rnn_train:429) INFO: (Steps: 99038) Finished 90036 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99039/100000 [00:25<09:26,  1.70it/s]2025-10-14 11:18:11,266 (rnn_train:429) INFO: (Steps: 99039) Finished 90037 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99040/100000 [00:25<09:33,  1.68it/s]2025-10-14 11:18:11,877 (rnn_train:429) INFO: (Steps: 99040) Finished 90038 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99041/100000 [00:26<09:45,  1.64it/s]2025-10-14 11:18:12,547 (rnn_train:429) INFO: (Steps: 99041) Finished 90039 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99042/100000 [00:27<09:42,  1.64it/s]2025-10-14 11:18:13,132 (rnn_train:429) INFO: (Steps: 99042) Finished 90040 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99043/100000 [00:27<09:39,  1.65it/s]2025-10-14 11:18:13,720 (rnn_train:429) INFO: (Steps: 99043) Finished 90041 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99044/100000 [00:28<09:27,  1.69it/s]2025-10-14 11:18:14,301 (rnn_train:429) INFO: (Steps: 99044) Finished 90042 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99045/100000 [00:28<09:21,  1.70it/s]2025-10-14 11:18:14,868 (rnn_train:429) INFO: (Steps: 99045) Finished 90043 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99046/100000 [00:29<09:25,  1.69it/s]2025-10-14 11:18:15,470 (rnn_train:429) INFO: (Steps: 99046) Finished 90044 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99047/100000 [00:30<09:41,  1.64it/s]2025-10-14 11:18:16,138 (rnn_train:429) INFO: (Steps: 99047) Finished 90045 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99048/100000 [00:30<09:38,  1.64it/s]2025-10-14 11:18:16,743 (rnn_train:429) INFO: (Steps: 99048) Finished 90046 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99049/100000 [00:31<09:52,  1.61it/s]2025-10-14 11:18:17,382 (rnn_train:429) INFO: (Steps: 99049) Finished 90047 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99050/100000 [00:31<09:42,  1.63it/s]2025-10-14 11:18:17,972 (rnn_train:429) INFO: (Steps: 99050) Finished 90048 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99051/100000 [00:32<09:45,  1.62it/s]2025-10-14 11:18:18,602 (rnn_train:429) INFO: (Steps: 99051) Finished 90049 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99052/100000 [00:33<09:39,  1.64it/s]2025-10-14 11:18:19,195 (rnn_train:429) INFO: (Steps: 99052) Finished 90050 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99053/100000 [00:33<09:45,  1.62it/s]2025-10-14 11:18:19,831 (rnn_train:429) INFO: (Steps: 99053) Finished 90051 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99054/100000 [00:34<09:50,  1.60it/s]2025-10-14 11:18:20,470 (rnn_train:429) INFO: (Steps: 99054) Finished 90052 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99055/100000 [00:35<09:35,  1.64it/s]2025-10-14 11:18:21,049 (rnn_train:429) INFO: (Steps: 99055) Finished 90053 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99056/100000 [00:35<09:30,  1.66it/s]2025-10-14 11:18:21,649 (rnn_train:429) INFO: (Steps: 99056) Finished 90054 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99057/100000 [00:36<09:24,  1.67it/s]2025-10-14 11:18:22,227 (rnn_train:429) INFO: (Steps: 99057) Finished 90055 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99058/100000 [00:36<09:19,  1.68it/s]2025-10-14 11:18:22,816 (rnn_train:429) INFO: (Steps: 99058) Finished 90056 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99059/100000 [00:37<09:19,  1.68it/s]2025-10-14 11:18:23,402 (rnn_train:429) INFO: (Steps: 99059) Finished 90057 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99060/100000 [00:37<09:15,  1.69it/s]2025-10-14 11:18:23,979 (rnn_train:429) INFO: (Steps: 99060) Finished 90058 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99061/100000 [00:38<09:22,  1.67it/s]2025-10-14 11:18:24,602 (rnn_train:429) INFO: (Steps: 99061) Finished 90059 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99062/100000 [00:39<09:21,  1.67it/s]2025-10-14 11:18:25,202 (rnn_train:429) INFO: (Steps: 99062) Finished 90060 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99063/100000 [00:39<09:32,  1.64it/s]2025-10-14 11:18:25,832 (rnn_train:429) INFO: (Steps: 99063) Finished 90061 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99064/100000 [00:40<09:23,  1.66it/s]2025-10-14 11:18:26,414 (rnn_train:429) INFO: (Steps: 99064) Finished 90062 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99065/100000 [00:41<09:24,  1.66it/s]2025-10-14 11:18:27,025 (rnn_train:429) INFO: (Steps: 99065) Finished 90063 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99066/100000 [00:41<09:22,  1.66it/s]2025-10-14 11:18:27,621 (rnn_train:429) INFO: (Steps: 99066) Finished 90064 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99067/100000 [00:42<09:37,  1.61it/s]2025-10-14 11:18:28,299 (rnn_train:429) INFO: (Steps: 99067) Finished 90065 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99068/100000 [00:42<09:42,  1.60it/s]2025-10-14 11:18:28,939 (rnn_train:429) INFO: (Steps: 99068) Finished 90066 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99069/100000 [00:43<09:28,  1.64it/s]2025-10-14 11:18:29,499 (rnn_train:429) INFO: (Steps: 99069) Finished 90067 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99070/100000 [00:44<09:15,  1.67it/s]2025-10-14 11:18:30,062 (rnn_train:429) INFO: (Steps: 99070) Finished 90068 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99071/100000 [00:44<09:08,  1.69it/s]2025-10-14 11:18:30,639 (rnn_train:429) INFO: (Steps: 99071) Finished 90069 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99072/100000 [00:45<09:12,  1.68it/s]2025-10-14 11:18:31,244 (rnn_train:429) INFO: (Steps: 99072) Finished 90070 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99073/100000 [00:45<09:15,  1.67it/s]2025-10-14 11:18:31,866 (rnn_train:429) INFO: (Steps: 99073) Finished 90071 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99074/100000 [00:46<09:23,  1.64it/s]2025-10-14 11:18:32,486 (rnn_train:429) INFO: (Steps: 99074) Finished 90072 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99075/100000 [00:47<09:24,  1.64it/s]2025-10-14 11:18:33,094 (rnn_train:429) INFO: (Steps: 99075) Finished 90073 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99076/100000 [00:47<09:24,  1.64it/s]2025-10-14 11:18:33,715 (rnn_train:429) INFO: (Steps: 99076) Finished 90074 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99077/100000 [00:48<09:27,  1.63it/s]2025-10-14 11:18:34,329 (rnn_train:429) INFO: (Steps: 99077) Finished 90075 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99078/100000 [00:48<09:19,  1.65it/s]2025-10-14 11:18:34,922 (rnn_train:429) INFO: (Steps: 99078) Finished 90076 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99079/100000 [00:49<09:11,  1.67it/s]2025-10-14 11:18:35,514 (rnn_train:429) INFO: (Steps: 99079) Finished 90077 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99080/100000 [00:50<09:06,  1.68it/s]2025-10-14 11:18:36,082 (rnn_train:429) INFO: (Steps: 99080) Finished 90078 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99081/100000 [00:50<09:11,  1.67it/s]2025-10-14 11:18:36,699 (rnn_train:429) INFO: (Steps: 99081) Finished 90079 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99082/100000 [00:51<09:01,  1.69it/s]2025-10-14 11:18:37,268 (rnn_train:429) INFO: (Steps: 99082) Finished 90080 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99083/100000 [00:51<08:54,  1.72it/s]2025-10-14 11:18:37,833 (rnn_train:429) INFO: (Steps: 99083) Finished 90081 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99084/100000 [00:52<08:56,  1.71it/s]2025-10-14 11:18:38,432 (rnn_train:429) INFO: (Steps: 99084) Finished 90082 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99085/100000 [00:52<08:52,  1.72it/s]2025-10-14 11:18:39,000 (rnn_train:429) INFO: (Steps: 99085) Finished 90083 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99086/100000 [00:53<08:43,  1.75it/s]2025-10-14 11:18:39,545 (rnn_train:429) INFO: (Steps: 99086) Finished 90084 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99087/100000 [00:54<08:53,  1.71it/s]2025-10-14 11:18:40,159 (rnn_train:429) INFO: (Steps: 99087) Finished 90085 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99088/100000 [00:54<09:02,  1.68it/s]2025-10-14 11:18:40,786 (rnn_train:429) INFO: (Steps: 99088) Finished 90086 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99089/100000 [00:55<09:00,  1.69it/s]2025-10-14 11:18:41,376 (rnn_train:429) INFO: (Steps: 99089) Finished 90087 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99090/100000 [00:55<09:02,  1.68it/s]2025-10-14 11:18:41,977 (rnn_train:429) INFO: (Steps: 99090) Finished 90088 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99091/100000 [00:56<08:56,  1.69it/s]2025-10-14 11:18:42,550 (rnn_train:429) INFO: (Steps: 99091) Finished 90089 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99092/100000 [00:57<08:52,  1.71it/s]2025-10-14 11:18:43,128 (rnn_train:429) INFO: (Steps: 99092) Finished 90090 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99093/100000 [00:57<08:47,  1.72it/s]2025-10-14 11:18:43,696 (rnn_train:429) INFO: (Steps: 99093) Finished 90091 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99094/100000 [00:58<08:40,  1.74it/s]2025-10-14 11:18:44,251 (rnn_train:429) INFO: (Steps: 99094) Finished 90092 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99095/100000 [00:58<08:46,  1.72it/s]2025-10-14 11:18:44,851 (rnn_train:429) INFO: (Steps: 99095) Finished 90093 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99096/100000 [00:59<08:42,  1.73it/s]2025-10-14 11:18:45,414 (rnn_train:429) INFO: (Steps: 99096) Finished 90094 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99097/100000 [00:59<08:40,  1.74it/s]2025-10-14 11:18:45,988 (rnn_train:429) INFO: (Steps: 99097) Finished 90095 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99098/100000 [01:00<08:35,  1.75it/s]2025-10-14 11:18:46,555 (rnn_train:429) INFO: (Steps: 99098) Finished 90096 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99099/100000 [01:01<08:47,  1.71it/s]2025-10-14 11:18:47,173 (rnn_train:429) INFO: (Steps: 99099) Finished 90097 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99100/100000 [01:01<08:42,  1.72it/s]2025-10-14 11:18:47,741 (rnn_train:429) INFO: (Steps: 99100) Finished 90098 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99101/100000 [01:02<08:51,  1.69it/s]2025-10-14 11:18:48,357 (rnn_train:429) INFO: (Steps: 99101) Finished 90099 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99102/100000 [01:02<08:53,  1.68it/s]2025-10-14 11:18:48,954 (rnn_train:429) INFO: (Steps: 99102) Finished 90100 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99103/100000 [01:03<08:48,  1.70it/s]2025-10-14 11:18:49,536 (rnn_train:429) INFO: (Steps: 99103) Finished 90101 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99104/100000 [01:04<08:41,  1.72it/s]2025-10-14 11:18:50,100 (rnn_train:429) INFO: (Steps: 99104) Finished 90102 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99105/100000 [01:04<08:37,  1.73it/s]2025-10-14 11:18:50,668 (rnn_train:429) INFO: (Steps: 99105) Finished 90103 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99106/100000 [01:05<08:40,  1.72it/s]2025-10-14 11:18:51,267 (rnn_train:429) INFO: (Steps: 99106) Finished 90104 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99107/100000 [01:05<08:33,  1.74it/s]2025-10-14 11:18:51,822 (rnn_train:429) INFO: (Steps: 99107) Finished 90105 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99108/100000 [01:06<08:27,  1.76it/s]2025-10-14 11:18:52,372 (rnn_train:429) INFO: (Steps: 99108) Finished 90106 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99109/100000 [01:06<08:20,  1.78it/s]2025-10-14 11:18:52,923 (rnn_train:429) INFO: (Steps: 99109) Finished 90107 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99110/100000 [01:07<08:36,  1.72it/s]2025-10-14 11:18:53,543 (rnn_train:429) INFO: (Steps: 99110) Finished 90108 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99111/100000 [01:08<08:36,  1.72it/s]2025-10-14 11:18:54,123 (rnn_train:429) INFO: (Steps: 99111) Finished 90109 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99112/100000 [01:08<08:38,  1.71it/s]2025-10-14 11:18:54,714 (rnn_train:429) INFO: (Steps: 99112) Finished 90110 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99113/100000 [01:09<08:43,  1.69it/s]2025-10-14 11:18:55,320 (rnn_train:429) INFO: (Steps: 99113) Finished 90111 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99114/100000 [01:09<08:45,  1.69it/s]2025-10-14 11:18:55,922 (rnn_train:429) INFO: (Steps: 99114) Finished 90112 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99115/100000 [01:10<08:33,  1.72it/s]2025-10-14 11:18:56,466 (rnn_train:429) INFO: (Steps: 99115) Finished 90113 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99116/100000 [01:11<08:42,  1.69it/s]2025-10-14 11:18:57,089 (rnn_train:429) INFO: (Steps: 99116) Finished 90114 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99117/100000 [01:11<08:29,  1.73it/s]2025-10-14 11:18:57,632 (rnn_train:429) INFO: (Steps: 99117) Finished 90115 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99118/100000 [01:12<08:32,  1.72it/s]2025-10-14 11:18:58,221 (rnn_train:429) INFO: (Steps: 99118) Finished 90116 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99119/100000 [01:12<08:44,  1.68it/s]2025-10-14 11:18:58,855 (rnn_train:429) INFO: (Steps: 99119) Finished 90117 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99120/100000 [01:13<08:52,  1.65it/s]2025-10-14 11:18:59,482 (rnn_train:429) INFO: (Steps: 99120) Finished 90118 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99121/100000 [01:14<08:46,  1.67it/s]2025-10-14 11:19:00,066 (rnn_train:429) INFO: (Steps: 99121) Finished 90119 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99122/100000 [01:14<08:39,  1.69it/s]2025-10-14 11:19:00,649 (rnn_train:429) INFO: (Steps: 99122) Finished 90120 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99123/100000 [01:15<08:40,  1.68it/s]2025-10-14 11:19:01,238 (rnn_train:429) INFO: (Steps: 99123) Finished 90121 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99124/100000 [01:15<08:39,  1.69it/s]2025-10-14 11:19:01,832 (rnn_train:429) INFO: (Steps: 99124) Finished 90122 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99125/100000 [01:16<08:36,  1.69it/s]2025-10-14 11:19:02,416 (rnn_train:429) INFO: (Steps: 99125) Finished 90123 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99126/100000 [01:17<08:44,  1.67it/s]2025-10-14 11:19:03,035 (rnn_train:429) INFO: (Steps: 99126) Finished 90124 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99127/100000 [01:17<08:38,  1.68it/s]2025-10-14 11:19:03,624 (rnn_train:429) INFO: (Steps: 99127) Finished 90125 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99128/100000 [01:18<08:38,  1.68it/s]2025-10-14 11:19:04,214 (rnn_train:429) INFO: (Steps: 99128) Finished 90126 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99129/100000 [01:18<08:46,  1.65it/s]2025-10-14 11:19:04,835 (rnn_train:429) INFO: (Steps: 99129) Finished 90127 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99130/100000 [01:19<08:34,  1.69it/s]2025-10-14 11:19:05,398 (rnn_train:429) INFO: (Steps: 99130) Finished 90128 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99131/100000 [01:19<08:38,  1.67it/s]2025-10-14 11:19:06,014 (rnn_train:429) INFO: (Steps: 99131) Finished 90129 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99132/100000 [01:20<08:38,  1.67it/s]2025-10-14 11:19:06,616 (rnn_train:429) INFO: (Steps: 99132) Finished 90130 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99133/100000 [01:21<08:40,  1.67it/s]2025-10-14 11:19:07,210 (rnn_train:429) INFO: (Steps: 99133) Finished 90131 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99134/100000 [01:21<08:37,  1.67it/s]2025-10-14 11:19:07,805 (rnn_train:429) INFO: (Steps: 99134) Finished 90132 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99135/100000 [01:22<08:34,  1.68it/s]2025-10-14 11:19:08,391 (rnn_train:429) INFO: (Steps: 99135) Finished 90133 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99136/100000 [01:22<08:25,  1.71it/s]2025-10-14 11:19:08,956 (rnn_train:429) INFO: (Steps: 99136) Finished 90134 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99137/100000 [01:23<08:22,  1.72it/s]2025-10-14 11:19:09,535 (rnn_train:429) INFO: (Steps: 99137) Finished 90135 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99138/100000 [01:24<08:18,  1.73it/s]2025-10-14 11:19:10,100 (rnn_train:429) INFO: (Steps: 99138) Finished 90136 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99139/100000 [01:24<08:16,  1.73it/s]2025-10-14 11:19:10,691 (rnn_train:429) INFO: (Steps: 99139) Finished 90137 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99140/100000 [01:25<08:23,  1.71it/s]2025-10-14 11:19:11,283 (rnn_train:429) INFO: (Steps: 99140) Finished 90138 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99141/100000 [01:25<08:24,  1.70it/s]2025-10-14 11:19:11,878 (rnn_train:429) INFO: (Steps: 99141) Finished 90139 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99142/100000 [01:26<08:23,  1.70it/s]2025-10-14 11:19:12,457 (rnn_train:429) INFO: (Steps: 99142) Finished 90140 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99143/100000 [01:27<08:26,  1.69it/s]2025-10-14 11:19:13,055 (rnn_train:429) INFO: (Steps: 99143) Finished 90141 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99144/100000 [01:27<08:33,  1.67it/s]2025-10-14 11:19:13,684 (rnn_train:429) INFO: (Steps: 99144) Finished 90142 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99145/100000 [01:28<08:42,  1.64it/s]2025-10-14 11:19:14,315 (rnn_train:429) INFO: (Steps: 99145) Finished 90143 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99146/100000 [01:28<08:26,  1.68it/s]2025-10-14 11:19:14,865 (rnn_train:429) INFO: (Steps: 99146) Finished 90144 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99147/100000 [01:29<08:17,  1.71it/s]2025-10-14 11:19:15,428 (rnn_train:429) INFO: (Steps: 99147) Finished 90145 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99148/100000 [01:29<08:12,  1.73it/s]2025-10-14 11:19:15,999 (rnn_train:429) INFO: (Steps: 99148) Finished 90146 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99149/100000 [01:30<08:15,  1.72it/s]2025-10-14 11:19:16,585 (rnn_train:429) INFO: (Steps: 99149) Finished 90147 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99150/100000 [01:31<08:11,  1.73it/s]2025-10-14 11:19:17,157 (rnn_train:429) INFO: (Steps: 99150) Finished 90148 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99151/100000 [01:31<08:11,  1.73it/s]2025-10-14 11:19:17,732 (rnn_train:429) INFO: (Steps: 99151) Finished 90149 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99152/100000 [01:32<08:25,  1.68it/s]2025-10-14 11:19:18,373 (rnn_train:429) INFO: (Steps: 99152) Finished 90150 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99153/100000 [01:32<08:19,  1.69it/s]2025-10-14 11:19:18,948 (rnn_train:429) INFO: (Steps: 99153) Finished 90151 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99154/100000 [01:33<08:12,  1.72it/s]2025-10-14 11:19:19,510 (rnn_train:429) INFO: (Steps: 99154) Finished 90152 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99155/100000 [01:34<08:20,  1.69it/s]2025-10-14 11:19:20,129 (rnn_train:429) INFO: (Steps: 99155) Finished 90153 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99156/100000 [01:34<08:11,  1.72it/s]2025-10-14 11:19:20,683 (rnn_train:429) INFO: (Steps: 99156) Finished 90154 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99157/100000 [01:35<08:07,  1.73it/s]2025-10-14 11:19:21,252 (rnn_train:429) INFO: (Steps: 99157) Finished 90155 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99158/100000 [01:35<08:19,  1.69it/s]2025-10-14 11:19:21,888 (rnn_train:429) INFO: (Steps: 99158) Finished 90156 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99159/100000 [01:36<08:28,  1.65it/s]2025-10-14 11:19:22,523 (rnn_train:429) INFO: (Steps: 99159) Finished 90157 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99160/100000 [01:37<08:32,  1.64it/s]2025-10-14 11:19:23,134 (rnn_train:429) INFO: (Steps: 99160) Finished 90158 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99161/100000 [01:37<08:29,  1.65it/s]2025-10-14 11:19:23,735 (rnn_train:429) INFO: (Steps: 99161) Finished 90159 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99162/100000 [01:38<08:24,  1.66it/s]2025-10-14 11:19:24,328 (rnn_train:429) INFO: (Steps: 99162) Finished 90160 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99163/100000 [01:38<08:17,  1.68it/s]2025-10-14 11:19:24,913 (rnn_train:429) INFO: (Steps: 99163) Finished 90161 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99164/100000 [01:39<08:18,  1.68it/s]2025-10-14 11:19:25,520 (rnn_train:429) INFO: (Steps: 99164) Finished 90162 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99165/100000 [01:40<08:17,  1.68it/s]2025-10-14 11:19:26,099 (rnn_train:429) INFO: (Steps: 99165) Finished 90163 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99166/100000 [01:40<08:08,  1.71it/s]2025-10-14 11:19:26,663 (rnn_train:429) INFO: (Steps: 99166) Finished 90164 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99167/100000 [01:41<08:15,  1.68it/s]2025-10-14 11:19:27,280 (rnn_train:429) INFO: (Steps: 99167) Finished 90165 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99168/100000 [01:41<08:14,  1.68it/s]2025-10-14 11:19:27,868 (rnn_train:429) INFO: (Steps: 99168) Finished 90166 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99169/100000 [01:42<08:19,  1.66it/s]2025-10-14 11:19:28,497 (rnn_train:429) INFO: (Steps: 99169) Finished 90167 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99170/100000 [01:43<08:13,  1.68it/s]2025-10-14 11:19:29,069 (rnn_train:429) INFO: (Steps: 99170) Finished 90168 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99171/100000 [01:43<08:08,  1.70it/s]2025-10-14 11:19:29,641 (rnn_train:429) INFO: (Steps: 99171) Finished 90169 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99172/100000 [01:44<08:04,  1.71it/s]2025-10-14 11:19:30,226 (rnn_train:429) INFO: (Steps: 99172) Finished 90170 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99173/100000 [01:44<07:59,  1.72it/s]2025-10-14 11:19:30,793 (rnn_train:429) INFO: (Steps: 99173) Finished 90171 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99174/100000 [01:45<08:09,  1.69it/s]2025-10-14 11:19:31,420 (rnn_train:429) INFO: (Steps: 99174) Finished 90172 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99175/100000 [01:45<08:10,  1.68it/s]2025-10-14 11:19:32,012 (rnn_train:429) INFO: (Steps: 99175) Finished 90173 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99176/100000 [01:46<08:14,  1.66it/s]2025-10-14 11:19:32,622 (rnn_train:429) INFO: (Steps: 99176) Finished 90174 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99177/100000 [01:47<08:19,  1.65it/s]2025-10-14 11:19:33,244 (rnn_train:429) INFO: (Steps: 99177) Finished 90175 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99178/100000 [01:47<08:11,  1.67it/s]2025-10-14 11:19:33,822 (rnn_train:429) INFO: (Steps: 99178) Finished 90176 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99179/100000 [01:48<08:16,  1.65it/s]2025-10-14 11:19:34,437 (rnn_train:429) INFO: (Steps: 99179) Finished 90177 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99180/100000 [01:49<08:15,  1.66it/s]2025-10-14 11:19:35,044 (rnn_train:429) INFO: (Steps: 99180) Finished 90178 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99181/100000 [01:49<08:06,  1.68it/s]2025-10-14 11:19:35,621 (rnn_train:429) INFO: (Steps: 99181) Finished 90179 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99182/100000 [01:50<07:59,  1.71it/s]2025-10-14 11:19:36,186 (rnn_train:429) INFO: (Steps: 99182) Finished 90180 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99183/100000 [01:50<08:03,  1.69it/s]2025-10-14 11:19:36,787 (rnn_train:429) INFO: (Steps: 99183) Finished 90181 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99184/100000 [01:51<07:57,  1.71it/s]2025-10-14 11:19:37,359 (rnn_train:429) INFO: (Steps: 99184) Finished 90182 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99185/100000 [01:51<08:00,  1.70it/s]2025-10-14 11:19:37,968 (rnn_train:429) INFO: (Steps: 99185) Finished 90183 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99186/100000 [01:52<08:07,  1.67it/s]2025-10-14 11:19:38,583 (rnn_train:429) INFO: (Steps: 99186) Finished 90184 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99187/100000 [01:53<07:58,  1.70it/s]2025-10-14 11:19:39,142 (rnn_train:429) INFO: (Steps: 99187) Finished 90185 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99188/100000 [01:53<07:46,  1.74it/s]2025-10-14 11:19:39,692 (rnn_train:429) INFO: (Steps: 99188) Finished 90186 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99189/100000 [01:54<07:40,  1.76it/s]2025-10-14 11:19:40,242 (rnn_train:429) INFO: (Steps: 99189) Finished 90187 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99190/100000 [01:54<07:48,  1.73it/s]2025-10-14 11:19:40,842 (rnn_train:429) INFO: (Steps: 99190) Finished 90188 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99191/100000 [01:55<07:55,  1.70it/s]2025-10-14 11:19:41,460 (rnn_train:429) INFO: (Steps: 99191) Finished 90189 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99192/100000 [01:56<07:52,  1.71it/s]2025-10-14 11:19:42,024 (rnn_train:429) INFO: (Steps: 99192) Finished 90190 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99193/100000 [01:56<07:49,  1.72it/s]2025-10-14 11:19:42,599 (rnn_train:429) INFO: (Steps: 99193) Finished 90191 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99194/100000 [01:57<07:47,  1.72it/s]2025-10-14 11:19:43,175 (rnn_train:429) INFO: (Steps: 99194) Finished 90192 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99195/100000 [01:57<07:45,  1.73it/s]2025-10-14 11:19:43,756 (rnn_train:429) INFO: (Steps: 99195) Finished 90193 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99196/100000 [01:58<07:56,  1.69it/s]2025-10-14 11:19:44,375 (rnn_train:429) INFO: (Steps: 99196) Finished 90194 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99197/100000 [01:58<07:48,  1.72it/s]2025-10-14 11:19:44,940 (rnn_train:429) INFO: (Steps: 99197) Finished 90195 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99198/100000 [01:59<07:57,  1.68it/s]2025-10-14 11:19:45,572 (rnn_train:429) INFO: (Steps: 99198) Finished 90196 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99199/100000 [02:00<07:47,  1.71it/s]2025-10-14 11:19:46,126 (rnn_train:429) INFO: (Steps: 99199) Finished 90197 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99200/100000 [02:00<07:40,  1.74it/s]2025-10-14 11:19:46,677 (rnn_train:429) INFO: (Steps: 99200) Finished 90198 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99201/100000 [02:01<07:32,  1.77it/s]2025-10-14 11:19:47,222 (rnn_train:429) INFO: (Steps: 99201) Finished 90199 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99202/100000 [02:01<07:36,  1.75it/s]2025-10-14 11:19:47,812 (rnn_train:429) INFO: (Steps: 99202) Finished 90200 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99203/100000 [02:02<07:37,  1.74it/s]2025-10-14 11:19:48,385 (rnn_train:429) INFO: (Steps: 99203) Finished 90201 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99204/100000 [02:02<07:39,  1.73it/s]2025-10-14 11:19:48,978 (rnn_train:429) INFO: (Steps: 99204) Finished 90202 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99205/100000 [02:03<07:39,  1.73it/s]2025-10-14 11:19:49,544 (rnn_train:429) INFO: (Steps: 99205) Finished 90203 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99206/100000 [02:04<07:34,  1.75it/s]2025-10-14 11:19:50,106 (rnn_train:429) INFO: (Steps: 99206) Finished 90204 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99207/100000 [02:04<07:36,  1.74it/s]2025-10-14 11:19:50,701 (rnn_train:429) INFO: (Steps: 99207) Finished 90205 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99208/100000 [02:05<07:39,  1.72it/s]2025-10-14 11:19:51,283 (rnn_train:429) INFO: (Steps: 99208) Finished 90206 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99209/100000 [02:05<07:47,  1.69it/s]2025-10-14 11:19:51,897 (rnn_train:429) INFO: (Steps: 99209) Finished 90207 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99210/100000 [02:06<07:40,  1.72it/s]2025-10-14 11:19:52,467 (rnn_train:429) INFO: (Steps: 99210) Finished 90208 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99211/100000 [02:07<07:36,  1.73it/s]2025-10-14 11:19:53,034 (rnn_train:429) INFO: (Steps: 99211) Finished 90209 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99212/100000 [02:07<07:35,  1.73it/s]2025-10-14 11:19:53,613 (rnn_train:429) INFO: (Steps: 99212) Finished 90210 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99213/100000 [02:08<07:33,  1.73it/s]2025-10-14 11:19:54,189 (rnn_train:429) INFO: (Steps: 99213) Finished 90211 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99214/100000 [02:08<07:33,  1.73it/s]2025-10-14 11:19:54,762 (rnn_train:429) INFO: (Steps: 99214) Finished 90212 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99215/100000 [02:09<07:31,  1.74it/s]2025-10-14 11:19:55,332 (rnn_train:429) INFO: (Steps: 99215) Finished 90213 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99216/100000 [02:09<07:31,  1.74it/s]2025-10-14 11:19:55,907 (rnn_train:429) INFO: (Steps: 99216) Finished 90214 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99217/100000 [02:10<07:33,  1.73it/s]2025-10-14 11:19:56,495 (rnn_train:429) INFO: (Steps: 99217) Finished 90215 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99218/100000 [02:11<07:27,  1.75it/s]2025-10-14 11:19:57,057 (rnn_train:429) INFO: (Steps: 99218) Finished 90216 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99219/100000 [02:11<07:27,  1.75it/s]2025-10-14 11:19:57,624 (rnn_train:429) INFO: (Steps: 99219) Finished 90217 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99220/100000 [02:12<07:34,  1.72it/s]2025-10-14 11:19:58,238 (rnn_train:429) INFO: (Steps: 99220) Finished 90218 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99221/100000 [02:12<07:34,  1.71it/s]2025-10-14 11:19:58,818 (rnn_train:429) INFO: (Steps: 99221) Finished 90219 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99222/100000 [02:13<07:31,  1.72it/s]2025-10-14 11:19:59,391 (rnn_train:429) INFO: (Steps: 99222) Finished 90220 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99223/100000 [02:13<07:32,  1.72it/s]2025-10-14 11:19:59,973 (rnn_train:429) INFO: (Steps: 99223) Finished 90221 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99224/100000 [02:14<07:28,  1.73it/s]2025-10-14 11:20:00,540 (rnn_train:429) INFO: (Steps: 99224) Finished 90222 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99225/100000 [02:15<07:27,  1.73it/s]2025-10-14 11:20:01,118 (rnn_train:429) INFO: (Steps: 99225) Finished 90223 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99226/100000 [02:15<07:34,  1.70it/s]2025-10-14 11:20:01,740 (rnn_train:429) INFO: (Steps: 99226) Finished 90224 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99227/100000 [02:16<07:35,  1.70it/s]2025-10-14 11:20:02,329 (rnn_train:429) INFO: (Steps: 99227) Finished 90225 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99228/100000 [02:16<07:33,  1.70it/s]2025-10-14 11:20:02,910 (rnn_train:429) INFO: (Steps: 99228) Finished 90226 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99229/100000 [02:17<07:36,  1.69it/s]2025-10-14 11:20:03,514 (rnn_train:429) INFO: (Steps: 99229) Finished 90227 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99230/100000 [02:18<07:40,  1.67it/s]2025-10-14 11:20:04,130 (rnn_train:429) INFO: (Steps: 99230) Finished 90228 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99231/100000 [02:18<07:34,  1.69it/s]2025-10-14 11:20:04,702 (rnn_train:429) INFO: (Steps: 99231) Finished 90229 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99232/100000 [02:19<07:27,  1.72it/s]2025-10-14 11:20:05,257 (rnn_train:429) INFO: (Steps: 99232) Finished 90230 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99233/100000 [02:19<07:24,  1.73it/s]2025-10-14 11:20:05,829 (rnn_train:429) INFO: (Steps: 99233) Finished 90231 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99234/100000 [02:20<07:31,  1.70it/s]2025-10-14 11:20:06,446 (rnn_train:429) INFO: (Steps: 99234) Finished 90232 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99235/100000 [02:21<07:26,  1.71it/s]2025-10-14 11:20:07,028 (rnn_train:429) INFO: (Steps: 99235) Finished 90233 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99236/100000 [02:21<07:41,  1.66it/s]2025-10-14 11:20:07,679 (rnn_train:429) INFO: (Steps: 99236) Finished 90234 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99237/100000 [02:22<07:44,  1.64it/s]2025-10-14 11:20:08,301 (rnn_train:429) INFO: (Steps: 99237) Finished 90235 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99238/100000 [02:22<07:50,  1.62it/s]2025-10-14 11:20:08,923 (rnn_train:429) INFO: (Steps: 99238) Finished 90236 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99239/100000 [02:23<07:52,  1.61it/s]2025-10-14 11:20:09,556 (rnn_train:429) INFO: (Steps: 99239) Finished 90237 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99240/100000 [02:24<07:53,  1.60it/s]2025-10-14 11:20:10,185 (rnn_train:429) INFO: (Steps: 99240) Finished 90238 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99241/100000 [02:24<07:46,  1.63it/s]2025-10-14 11:20:10,773 (rnn_train:429) INFO: (Steps: 99241) Finished 90239 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99242/100000 [02:25<07:51,  1.61it/s]2025-10-14 11:20:11,424 (rnn_train:429) INFO: (Steps: 99242) Finished 90240 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99243/100000 [02:26<07:55,  1.59it/s]2025-10-14 11:20:12,068 (rnn_train:429) INFO: (Steps: 99243) Finished 90241 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99244/100000 [02:26<07:51,  1.60it/s]2025-10-14 11:20:12,682 (rnn_train:429) INFO: (Steps: 99244) Finished 90242 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99245/100000 [02:27<07:45,  1.62it/s]2025-10-14 11:20:13,274 (rnn_train:429) INFO: (Steps: 99245) Finished 90243 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99246/100000 [02:27<07:41,  1.63it/s]2025-10-14 11:20:13,879 (rnn_train:429) INFO: (Steps: 99246) Finished 90244 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99247/100000 [02:28<07:39,  1.64it/s]2025-10-14 11:20:14,492 (rnn_train:429) INFO: (Steps: 99247) Finished 90245 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99248/100000 [02:29<07:40,  1.63it/s]2025-10-14 11:20:15,105 (rnn_train:429) INFO: (Steps: 99248) Finished 90246 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99249/100000 [02:29<07:56,  1.58it/s]2025-10-14 11:20:15,795 (rnn_train:429) INFO: (Steps: 99249) Finished 90247 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99250/100000 [02:30<07:57,  1.57it/s]2025-10-14 11:20:16,431 (rnn_train:429) INFO: (Steps: 99250) Finished 90248 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99251/100000 [02:30<07:44,  1.61it/s]2025-10-14 11:20:17,010 (rnn_train:429) INFO: (Steps: 99251) Finished 90249 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99252/100000 [02:31<07:52,  1.58it/s]2025-10-14 11:20:17,685 (rnn_train:429) INFO: (Steps: 99252) Finished 90250 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99253/100000 [02:32<07:52,  1.58it/s]2025-10-14 11:20:18,309 (rnn_train:429) INFO: (Steps: 99253) Finished 90251 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99254/100000 [02:32<07:42,  1.61it/s]2025-10-14 11:20:18,891 (rnn_train:429) INFO: (Steps: 99254) Finished 90252 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99255/100000 [02:33<07:33,  1.64it/s]2025-10-14 11:20:19,478 (rnn_train:429) INFO: (Steps: 99255) Finished 90253 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99256/100000 [02:34<07:25,  1.67it/s]2025-10-14 11:20:20,063 (rnn_train:429) INFO: (Steps: 99256) Finished 90254 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99257/100000 [02:34<07:22,  1.68it/s]2025-10-14 11:20:20,644 (rnn_train:429) INFO: (Steps: 99257) Finished 90255 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99258/100000 [02:35<07:16,  1.70it/s]2025-10-14 11:20:21,208 (rnn_train:429) INFO: (Steps: 99258) Finished 90256 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99259/100000 [02:35<07:17,  1.69it/s]2025-10-14 11:20:21,808 (rnn_train:429) INFO: (Steps: 99259) Finished 90257 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99260/100000 [02:36<07:29,  1.65it/s]2025-10-14 11:20:22,451 (rnn_train:429) INFO: (Steps: 99260) Finished 90258 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99261/100000 [02:37<07:21,  1.67it/s]2025-10-14 11:20:23,028 (rnn_train:429) INFO: (Steps: 99261) Finished 90259 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99262/100000 [02:37<07:12,  1.71it/s]2025-10-14 11:20:23,580 (rnn_train:429) INFO: (Steps: 99262) Finished 90260 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99263/100000 [02:38<07:17,  1.69it/s]2025-10-14 11:20:24,196 (rnn_train:429) INFO: (Steps: 99263) Finished 90261 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99264/100000 [02:38<07:10,  1.71it/s]2025-10-14 11:20:24,762 (rnn_train:429) INFO: (Steps: 99264) Finished 90262 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99265/100000 [02:39<07:19,  1.67it/s]2025-10-14 11:20:25,403 (rnn_train:429) INFO: (Steps: 99265) Finished 90263 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99266/100000 [02:40<07:29,  1.63it/s]2025-10-14 11:20:26,036 (rnn_train:429) INFO: (Steps: 99266) Finished 90264 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99267/100000 [02:40<07:22,  1.65it/s]2025-10-14 11:20:26,623 (rnn_train:429) INFO: (Steps: 99267) Finished 90265 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99268/100000 [02:41<07:25,  1.64it/s]2025-10-14 11:20:27,253 (rnn_train:429) INFO: (Steps: 99268) Finished 90266 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99269/100000 [02:41<07:24,  1.64it/s]2025-10-14 11:20:27,859 (rnn_train:429) INFO: (Steps: 99269) Finished 90267 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99270/100000 [02:42<07:19,  1.66it/s]2025-10-14 11:20:28,436 (rnn_train:429) INFO: (Steps: 99270) Finished 90268 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99271/100000 [02:42<07:13,  1.68it/s]2025-10-14 11:20:29,013 (rnn_train:429) INFO: (Steps: 99271) Finished 90269 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99272/100000 [02:43<07:09,  1.70it/s]2025-10-14 11:20:29,595 (rnn_train:429) INFO: (Steps: 99272) Finished 90270 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99273/100000 [02:44<07:04,  1.71it/s]2025-10-14 11:20:30,172 (rnn_train:429) INFO: (Steps: 99273) Finished 90271 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99274/100000 [02:44<07:07,  1.70it/s]2025-10-14 11:20:30,761 (rnn_train:429) INFO: (Steps: 99274) Finished 90272 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99275/100000 [02:45<07:04,  1.71it/s]2025-10-14 11:20:31,341 (rnn_train:429) INFO: (Steps: 99275) Finished 90273 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99276/100000 [02:45<07:05,  1.70it/s]2025-10-14 11:20:31,930 (rnn_train:429) INFO: (Steps: 99276) Finished 90274 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99277/100000 [02:46<07:05,  1.70it/s]2025-10-14 11:20:32,532 (rnn_train:429) INFO: (Steps: 99277) Finished 90275 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99278/100000 [02:47<07:06,  1.69it/s]2025-10-14 11:20:33,117 (rnn_train:429) INFO: (Steps: 99278) Finished 90276 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99279/100000 [02:47<07:10,  1.67it/s]2025-10-14 11:20:33,733 (rnn_train:429) INFO: (Steps: 99279) Finished 90277 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99280/100000 [02:48<07:15,  1.65it/s]2025-10-14 11:20:34,353 (rnn_train:429) INFO: (Steps: 99280) Finished 90278 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99281/100000 [02:48<07:07,  1.68it/s]2025-10-14 11:20:34,927 (rnn_train:429) INFO: (Steps: 99281) Finished 90279 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99282/100000 [02:49<07:18,  1.64it/s]2025-10-14 11:20:35,576 (rnn_train:429) INFO: (Steps: 99282) Finished 90280 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99283/100000 [02:50<07:23,  1.62it/s]2025-10-14 11:20:36,216 (rnn_train:429) INFO: (Steps: 99283) Finished 90281 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99284/100000 [02:50<07:19,  1.63it/s]2025-10-14 11:20:36,827 (rnn_train:429) INFO: (Steps: 99284) Finished 90282 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99285/100000 [02:51<07:19,  1.63it/s]2025-10-14 11:20:37,436 (rnn_train:429) INFO: (Steps: 99285) Finished 90283 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99286/100000 [02:51<07:10,  1.66it/s]2025-10-14 11:20:38,020 (rnn_train:429) INFO: (Steps: 99286) Finished 90284 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99287/100000 [02:52<07:09,  1.66it/s]2025-10-14 11:20:38,611 (rnn_train:429) INFO: (Steps: 99287) Finished 90285 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99288/100000 [02:53<07:03,  1.68it/s]2025-10-14 11:20:39,185 (rnn_train:429) INFO: (Steps: 99288) Finished 90286 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99289/100000 [02:53<07:09,  1.65it/s]2025-10-14 11:20:39,810 (rnn_train:429) INFO: (Steps: 99289) Finished 90287 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99290/100000 [02:54<07:12,  1.64it/s]2025-10-14 11:20:40,428 (rnn_train:429) INFO: (Steps: 99290) Finished 90288 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99291/100000 [02:54<07:05,  1.67it/s]2025-10-14 11:20:41,010 (rnn_train:429) INFO: (Steps: 99291) Finished 90289 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99292/100000 [02:55<07:05,  1.66it/s]2025-10-14 11:20:41,620 (rnn_train:429) INFO: (Steps: 99292) Finished 90290 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99293/100000 [02:56<07:03,  1.67it/s]2025-10-14 11:20:42,221 (rnn_train:429) INFO: (Steps: 99293) Finished 90291 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99294/100000 [02:56<06:57,  1.69it/s]2025-10-14 11:20:42,780 (rnn_train:429) INFO: (Steps: 99294) Finished 90292 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99295/100000 [02:57<06:53,  1.71it/s]2025-10-14 11:20:43,354 (rnn_train:429) INFO: (Steps: 99295) Finished 90293 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99296/100000 [02:57<06:57,  1.69it/s]2025-10-14 11:20:43,977 (rnn_train:429) INFO: (Steps: 99296) Finished 90294 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99297/100000 [02:58<06:56,  1.69it/s]2025-10-14 11:20:44,553 (rnn_train:429) INFO: (Steps: 99297) Finished 90295 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99298/100000 [02:59<06:50,  1.71it/s]2025-10-14 11:20:45,132 (rnn_train:429) INFO: (Steps: 99298) Finished 90296 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99299/100000 [02:59<07:10,  1.63it/s]2025-10-14 11:20:45,816 (rnn_train:429) INFO: (Steps: 99299) Finished 90297 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99300/100000 [03:00<07:09,  1.63it/s]2025-10-14 11:20:46,424 (rnn_train:429) INFO: (Steps: 99300) Finished 90298 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99301/100000 [03:01<07:08,  1.63it/s]2025-10-14 11:20:47,031 (rnn_train:429) INFO: (Steps: 99301) Finished 90299 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99302/100000 [03:01<07:03,  1.65it/s]2025-10-14 11:20:47,621 (rnn_train:429) INFO: (Steps: 99302) Finished 90300 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99303/100000 [03:02<06:55,  1.68it/s]2025-10-14 11:20:48,193 (rnn_train:429) INFO: (Steps: 99303) Finished 90301 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99304/100000 [03:02<06:56,  1.67it/s]2025-10-14 11:20:48,807 (rnn_train:429) INFO: (Steps: 99304) Finished 90302 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99305/100000 [03:03<07:10,  1.62it/s]2025-10-14 11:20:49,471 (rnn_train:429) INFO: (Steps: 99305) Finished 90303 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99306/100000 [03:04<07:11,  1.61it/s]2025-10-14 11:20:50,093 (rnn_train:429) INFO: (Steps: 99306) Finished 90304 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99307/100000 [03:04<07:09,  1.61it/s]2025-10-14 11:20:50,706 (rnn_train:429) INFO: (Steps: 99307) Finished 90305 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99308/100000 [03:05<06:59,  1.65it/s]2025-10-14 11:20:51,286 (rnn_train:429) INFO: (Steps: 99308) Finished 90306 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99309/100000 [03:05<07:01,  1.64it/s]2025-10-14 11:20:51,921 (rnn_train:429) INFO: (Steps: 99309) Finished 90307 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99310/100000 [03:06<06:57,  1.65it/s]2025-10-14 11:20:52,491 (rnn_train:429) INFO: (Steps: 99310) Finished 90308 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99311/100000 [03:07<06:52,  1.67it/s]2025-10-14 11:20:53,081 (rnn_train:429) INFO: (Steps: 99311) Finished 90309 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99312/100000 [03:07<06:59,  1.64it/s]2025-10-14 11:20:53,716 (rnn_train:429) INFO: (Steps: 99312) Finished 90310 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99313/100000 [03:08<06:54,  1.66it/s]2025-10-14 11:20:54,295 (rnn_train:429) INFO: (Steps: 99313) Finished 90311 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99314/100000 [03:08<06:52,  1.66it/s]2025-10-14 11:20:54,904 (rnn_train:429) INFO: (Steps: 99314) Finished 90312 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99315/100000 [03:09<06:48,  1.68it/s]2025-10-14 11:20:55,485 (rnn_train:429) INFO: (Steps: 99315) Finished 90313 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99316/100000 [03:10<06:52,  1.66it/s]2025-10-14 11:20:56,102 (rnn_train:429) INFO: (Steps: 99316) Finished 90314 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99317/100000 [03:10<06:53,  1.65it/s]2025-10-14 11:20:56,711 (rnn_train:429) INFO: (Steps: 99317) Finished 90315 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99318/100000 [03:11<06:52,  1.65it/s]2025-10-14 11:20:57,320 (rnn_train:429) INFO: (Steps: 99318) Finished 90316 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99319/100000 [03:11<06:47,  1.67it/s]2025-10-14 11:20:57,904 (rnn_train:429) INFO: (Steps: 99319) Finished 90317 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99320/100000 [03:12<06:41,  1.69it/s]2025-10-14 11:20:58,474 (rnn_train:429) INFO: (Steps: 99320) Finished 90318 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99321/100000 [03:13<06:43,  1.68it/s]2025-10-14 11:20:59,072 (rnn_train:429) INFO: (Steps: 99321) Finished 90319 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99322/100000 [03:13<06:43,  1.68it/s]2025-10-14 11:20:59,677 (rnn_train:429) INFO: (Steps: 99322) Finished 90320 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99323/100000 [03:14<06:39,  1.69it/s]2025-10-14 11:21:00,251 (rnn_train:429) INFO: (Steps: 99323) Finished 90321 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99324/100000 [03:14<06:33,  1.72it/s]2025-10-14 11:21:00,816 (rnn_train:429) INFO: (Steps: 99324) Finished 90322 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99325/100000 [03:15<06:30,  1.73it/s]2025-10-14 11:21:01,384 (rnn_train:429) INFO: (Steps: 99325) Finished 90323 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99326/100000 [03:15<06:38,  1.69it/s]2025-10-14 11:21:02,007 (rnn_train:429) INFO: (Steps: 99326) Finished 90324 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99327/100000 [03:16<06:32,  1.71it/s]2025-10-14 11:21:02,571 (rnn_train:429) INFO: (Steps: 99327) Finished 90325 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99328/100000 [03:17<06:37,  1.69it/s]2025-10-14 11:21:03,180 (rnn_train:429) INFO: (Steps: 99328) Finished 90326 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99329/100000 [03:17<06:36,  1.69it/s]2025-10-14 11:21:03,781 (rnn_train:429) INFO: (Steps: 99329) Finished 90327 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99330/100000 [03:18<06:43,  1.66it/s]2025-10-14 11:21:04,397 (rnn_train:429) INFO: (Steps: 99330) Finished 90328 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99331/100000 [03:18<06:34,  1.70it/s]2025-10-14 11:21:04,959 (rnn_train:429) INFO: (Steps: 99331) Finished 90329 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99332/100000 [03:19<06:36,  1.68it/s]2025-10-14 11:21:05,572 (rnn_train:429) INFO: (Steps: 99332) Finished 90330 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99333/100000 [03:20<06:32,  1.70it/s]2025-10-14 11:21:06,139 (rnn_train:429) INFO: (Steps: 99333) Finished 90331 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99334/100000 [03:20<06:29,  1.71it/s]2025-10-14 11:21:06,717 (rnn_train:429) INFO: (Steps: 99334) Finished 90332 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99335/100000 [03:21<06:22,  1.74it/s]2025-10-14 11:21:07,261 (rnn_train:429) INFO: (Steps: 99335) Finished 90333 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99336/100000 [03:21<06:20,  1.75it/s]2025-10-14 11:21:07,843 (rnn_train:429) INFO: (Steps: 99336) Finished 90334 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99337/100000 [03:22<06:24,  1.72it/s]2025-10-14 11:21:08,430 (rnn_train:429) INFO: (Steps: 99337) Finished 90335 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99338/100000 [03:23<06:25,  1.72it/s]2025-10-14 11:21:09,014 (rnn_train:429) INFO: (Steps: 99338) Finished 90336 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99339/100000 [03:23<06:21,  1.73it/s]2025-10-14 11:21:09,582 (rnn_train:429) INFO: (Steps: 99339) Finished 90337 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99340/100000 [03:24<06:20,  1.74it/s]2025-10-14 11:21:10,167 (rnn_train:429) INFO: (Steps: 99340) Finished 90338 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99341/100000 [03:24<06:26,  1.70it/s]2025-10-14 11:21:10,771 (rnn_train:429) INFO: (Steps: 99341) Finished 90339 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99342/100000 [03:25<06:22,  1.72it/s]2025-10-14 11:21:11,339 (rnn_train:429) INFO: (Steps: 99342) Finished 90340 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99343/100000 [03:25<06:17,  1.74it/s]2025-10-14 11:21:11,911 (rnn_train:429) INFO: (Steps: 99343) Finished 90341 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99344/100000 [03:26<06:29,  1.68it/s]2025-10-14 11:21:12,542 (rnn_train:429) INFO: (Steps: 99344) Finished 90342 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99345/100000 [03:27<06:30,  1.68it/s]2025-10-14 11:21:13,139 (rnn_train:429) INFO: (Steps: 99345) Finished 90343 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99346/100000 [03:27<06:25,  1.70it/s]2025-10-14 11:21:13,715 (rnn_train:429) INFO: (Steps: 99346) Finished 90344 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99347/100000 [03:28<06:23,  1.70it/s]2025-10-14 11:21:14,293 (rnn_train:429) INFO: (Steps: 99347) Finished 90345 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99348/100000 [03:28<06:19,  1.72it/s]2025-10-14 11:21:14,872 (rnn_train:429) INFO: (Steps: 99348) Finished 90346 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99349/100000 [03:29<06:23,  1.70it/s]2025-10-14 11:21:15,479 (rnn_train:429) INFO: (Steps: 99349) Finished 90347 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99350/100000 [03:30<06:24,  1.69it/s]2025-10-14 11:21:16,073 (rnn_train:429) INFO: (Steps: 99350) Finished 90348 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99351/100000 [03:30<06:23,  1.69it/s]2025-10-14 11:21:16,654 (rnn_train:429) INFO: (Steps: 99351) Finished 90349 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99352/100000 [03:31<06:25,  1.68it/s]2025-10-14 11:21:17,263 (rnn_train:429) INFO: (Steps: 99352) Finished 90350 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99353/100000 [03:31<06:20,  1.70it/s]2025-10-14 11:21:17,847 (rnn_train:429) INFO: (Steps: 99353) Finished 90351 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99354/100000 [03:32<06:23,  1.69it/s]2025-10-14 11:21:18,454 (rnn_train:429) INFO: (Steps: 99354) Finished 90352 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99355/100000 [03:33<06:22,  1.69it/s]2025-10-14 11:21:19,031 (rnn_train:429) INFO: (Steps: 99355) Finished 90353 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99356/100000 [03:33<06:23,  1.68it/s]2025-10-14 11:21:19,636 (rnn_train:429) INFO: (Steps: 99356) Finished 90354 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99357/100000 [03:34<06:26,  1.66it/s]2025-10-14 11:21:20,249 (rnn_train:429) INFO: (Steps: 99357) Finished 90355 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99358/100000 [03:34<06:19,  1.69it/s]2025-10-14 11:21:20,823 (rnn_train:429) INFO: (Steps: 99358) Finished 90356 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99359/100000 [03:35<06:15,  1.70it/s]2025-10-14 11:21:21,390 (rnn_train:429) INFO: (Steps: 99359) Finished 90357 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99360/100000 [03:36<06:22,  1.67it/s]2025-10-14 11:21:22,019 (rnn_train:429) INFO: (Steps: 99360) Finished 90358 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99361/100000 [03:36<06:27,  1.65it/s]2025-10-14 11:21:22,645 (rnn_train:429) INFO: (Steps: 99361) Finished 90359 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99362/100000 [03:37<06:29,  1.64it/s]2025-10-14 11:21:23,270 (rnn_train:429) INFO: (Steps: 99362) Finished 90360 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99363/100000 [03:37<06:25,  1.65it/s]2025-10-14 11:21:23,859 (rnn_train:429) INFO: (Steps: 99363) Finished 90361 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99364/100000 [03:38<06:17,  1.68it/s]2025-10-14 11:21:24,436 (rnn_train:429) INFO: (Steps: 99364) Finished 90362 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99365/100000 [03:39<06:18,  1.68it/s]2025-10-14 11:21:25,025 (rnn_train:429) INFO: (Steps: 99365) Finished 90363 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99366/100000 [03:39<06:15,  1.69it/s]2025-10-14 11:21:25,615 (rnn_train:429) INFO: (Steps: 99366) Finished 90364 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99367/100000 [03:40<06:12,  1.70it/s]2025-10-14 11:21:26,191 (rnn_train:429) INFO: (Steps: 99367) Finished 90365 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99368/100000 [03:40<06:07,  1.72it/s]2025-10-14 11:21:26,770 (rnn_train:429) INFO: (Steps: 99368) Finished 90366 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99369/100000 [03:41<06:07,  1.72it/s]2025-10-14 11:21:27,335 (rnn_train:429) INFO: (Steps: 99369) Finished 90367 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99370/100000 [03:41<06:09,  1.71it/s]2025-10-14 11:21:27,935 (rnn_train:429) INFO: (Steps: 99370) Finished 90368 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99371/100000 [03:42<06:08,  1.70it/s]2025-10-14 11:21:28,517 (rnn_train:429) INFO: (Steps: 99371) Finished 90369 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99372/100000 [03:43<06:14,  1.68it/s]2025-10-14 11:21:29,141 (rnn_train:429) INFO: (Steps: 99372) Finished 90370 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99373/100000 [03:43<06:06,  1.71it/s]2025-10-14 11:21:29,696 (rnn_train:429) INFO: (Steps: 99373) Finished 90371 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99374/100000 [03:44<05:58,  1.75it/s]2025-10-14 11:21:30,238 (rnn_train:429) INFO: (Steps: 99374) Finished 90372 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99375/100000 [03:44<05:54,  1.76it/s]2025-10-14 11:21:30,799 (rnn_train:429) INFO: (Steps: 99375) Finished 90373 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99376/100000 [03:45<05:54,  1.76it/s]2025-10-14 11:21:31,376 (rnn_train:429) INFO: (Steps: 99376) Finished 90374 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99377/100000 [03:45<06:01,  1.72it/s]2025-10-14 11:21:31,990 (rnn_train:429) INFO: (Steps: 99377) Finished 90375 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99378/100000 [03:46<06:06,  1.70it/s]2025-10-14 11:21:32,585 (rnn_train:429) INFO: (Steps: 99378) Finished 90376 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99379/100000 [03:47<05:58,  1.73it/s]2025-10-14 11:21:33,139 (rnn_train:429) INFO: (Steps: 99379) Finished 90377 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99380/100000 [03:47<06:03,  1.71it/s]2025-10-14 11:21:33,739 (rnn_train:429) INFO: (Steps: 99380) Finished 90378 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99381/100000 [03:48<05:57,  1.73it/s]2025-10-14 11:21:34,298 (rnn_train:429) INFO: (Steps: 99381) Finished 90379 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99382/100000 [03:48<05:58,  1.72it/s]2025-10-14 11:21:34,889 (rnn_train:429) INFO: (Steps: 99382) Finished 90380 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99383/100000 [03:49<05:52,  1.75it/s]2025-10-14 11:21:35,438 (rnn_train:429) INFO: (Steps: 99383) Finished 90381 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99384/100000 [03:49<05:47,  1.77it/s]2025-10-14 11:21:35,983 (rnn_train:429) INFO: (Steps: 99384) Finished 90382 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99385/100000 [03:50<05:57,  1.72it/s]2025-10-14 11:21:36,602 (rnn_train:429) INFO: (Steps: 99385) Finished 90383 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99386/100000 [03:51<06:01,  1.70it/s]2025-10-14 11:21:37,208 (rnn_train:429) INFO: (Steps: 99386) Finished 90384 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99387/100000 [03:51<05:53,  1.74it/s]2025-10-14 11:21:37,752 (rnn_train:429) INFO: (Steps: 99387) Finished 90385 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99388/100000 [03:52<05:54,  1.72it/s]2025-10-14 11:21:38,349 (rnn_train:429) INFO: (Steps: 99388) Finished 90386 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99389/100000 [03:52<05:49,  1.75it/s]2025-10-14 11:21:38,905 (rnn_train:429) INFO: (Steps: 99389) Finished 90387 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99390/100000 [03:53<05:54,  1.72it/s]2025-10-14 11:21:39,501 (rnn_train:429) INFO: (Steps: 99390) Finished 90388 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99391/100000 [03:54<05:45,  1.76it/s]2025-10-14 11:21:40,040 (rnn_train:429) INFO: (Steps: 99391) Finished 90389 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99392/100000 [03:54<05:41,  1.78it/s]2025-10-14 11:21:40,584 (rnn_train:429) INFO: (Steps: 99392) Finished 90390 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99393/100000 [03:55<05:37,  1.80it/s]2025-10-14 11:21:41,135 (rnn_train:429) INFO: (Steps: 99393) Finished 90391 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99394/100000 [03:55<05:34,  1.81it/s]2025-10-14 11:21:41,665 (rnn_train:429) INFO: (Steps: 99394) Finished 90392 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99395/100000 [03:56<05:30,  1.83it/s]2025-10-14 11:21:42,198 (rnn_train:429) INFO: (Steps: 99395) Finished 90393 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99396/100000 [03:56<05:22,  1.87it/s]2025-10-14 11:21:42,701 (rnn_train:429) INFO: (Steps: 99396) Finished 90394 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99397/100000 [03:57<05:33,  1.81it/s]2025-10-14 11:21:43,298 (rnn_train:429) INFO: (Steps: 99397) Finished 90395 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99398/100000 [03:57<05:31,  1.81it/s]2025-10-14 11:21:43,858 (rnn_train:429) INFO: (Steps: 99398) Finished 90396 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99399/100000 [03:58<05:30,  1.82it/s]2025-10-14 11:21:44,391 (rnn_train:429) INFO: (Steps: 99399) Finished 90397 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99400/100000 [03:58<05:29,  1.82it/s]2025-10-14 11:21:44,952 (rnn_train:429) INFO: (Steps: 99400) Finished 90398 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99401/100000 [03:59<05:35,  1.79it/s]2025-10-14 11:21:45,534 (rnn_train:429) INFO: (Steps: 99401) Finished 90399 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99402/100000 [04:00<05:37,  1.77it/s]2025-10-14 11:21:46,112 (rnn_train:429) INFO: (Steps: 99402) Finished 90400 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99403/100000 [04:00<05:38,  1.76it/s]2025-10-14 11:21:46,683 (rnn_train:429) INFO: (Steps: 99403) Finished 90401 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99404/100000 [04:01<05:35,  1.78it/s]2025-10-14 11:21:47,231 (rnn_train:429) INFO: (Steps: 99404) Finished 90402 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99405/100000 [04:01<05:31,  1.79it/s]2025-10-14 11:21:47,783 (rnn_train:429) INFO: (Steps: 99405) Finished 90403 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99406/100000 [04:02<05:40,  1.74it/s]2025-10-14 11:21:48,390 (rnn_train:429) INFO: (Steps: 99406) Finished 90404 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99407/100000 [04:02<05:46,  1.71it/s]2025-10-14 11:21:49,004 (rnn_train:429) INFO: (Steps: 99407) Finished 90405 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99408/100000 [04:03<05:47,  1.70it/s]2025-10-14 11:21:49,587 (rnn_train:429) INFO: (Steps: 99408) Finished 90406 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99409/100000 [04:04<05:37,  1.75it/s]2025-10-14 11:21:50,123 (rnn_train:429) INFO: (Steps: 99409) Finished 90407 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99410/100000 [04:04<05:42,  1.72it/s]2025-10-14 11:21:50,737 (rnn_train:429) INFO: (Steps: 99410) Finished 90408 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99411/100000 [04:05<05:29,  1.79it/s]2025-10-14 11:21:51,239 (rnn_train:429) INFO: (Steps: 99411) Finished 90409 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99412/100000 [04:05<05:05,  1.92it/s]2025-10-14 11:21:51,662 (rnn_train:429) INFO: (Steps: 99412) Finished 90410 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99413/100000 [04:06<04:55,  1.99it/s]2025-10-14 11:21:52,136 (rnn_train:429) INFO: (Steps: 99413) Finished 90411 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99414/100000 [04:06<05:13,  1.87it/s]2025-10-14 11:21:52,736 (rnn_train:429) INFO: (Steps: 99414) Finished 90412 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99415/100000 [04:07<05:19,  1.83it/s]2025-10-14 11:21:53,317 (rnn_train:429) INFO: (Steps: 99415) Finished 90413 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99416/100000 [04:07<05:30,  1.77it/s]2025-10-14 11:21:53,920 (rnn_train:429) INFO: (Steps: 99416) Finished 90414 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99417/100000 [04:08<05:26,  1.79it/s]2025-10-14 11:21:54,468 (rnn_train:429) INFO: (Steps: 99417) Finished 90415 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99418/100000 [04:09<05:37,  1.72it/s]2025-10-14 11:21:55,098 (rnn_train:429) INFO: (Steps: 99418) Finished 90416 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99419/100000 [04:09<05:32,  1.75it/s]2025-10-14 11:21:55,654 (rnn_train:429) INFO: (Steps: 99419) Finished 90417 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99420/100000 [04:10<05:37,  1.72it/s]2025-10-14 11:21:56,267 (rnn_train:429) INFO: (Steps: 99420) Finished 90418 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99421/100000 [04:10<05:37,  1.71it/s]2025-10-14 11:21:56,842 (rnn_train:429) INFO: (Steps: 99421) Finished 90419 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99422/100000 [04:11<05:34,  1.73it/s]2025-10-14 11:21:57,418 (rnn_train:429) INFO: (Steps: 99422) Finished 90420 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99423/100000 [04:11<05:33,  1.73it/s]2025-10-14 11:21:57,989 (rnn_train:429) INFO: (Steps: 99423) Finished 90421 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99424/100000 [04:12<05:26,  1.76it/s]2025-10-14 11:21:58,535 (rnn_train:429) INFO: (Steps: 99424) Finished 90422 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99425/100000 [04:13<05:31,  1.73it/s]2025-10-14 11:21:59,132 (rnn_train:429) INFO: (Steps: 99425) Finished 90423 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99426/100000 [04:13<05:26,  1.76it/s]2025-10-14 11:21:59,684 (rnn_train:429) INFO: (Steps: 99426) Finished 90424 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99427/100000 [04:14<05:28,  1.74it/s]2025-10-14 11:22:00,263 (rnn_train:429) INFO: (Steps: 99427) Finished 90425 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99428/100000 [04:14<05:26,  1.75it/s]2025-10-14 11:22:00,840 (rnn_train:429) INFO: (Steps: 99428) Finished 90426 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99429/100000 [04:15<05:38,  1.69it/s]2025-10-14 11:22:01,486 (rnn_train:429) INFO: (Steps: 99429) Finished 90427 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99430/100000 [04:16<05:41,  1.67it/s]2025-10-14 11:22:02,094 (rnn_train:429) INFO: (Steps: 99430) Finished 90428 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99431/100000 [04:16<05:43,  1.66it/s]2025-10-14 11:22:02,712 (rnn_train:429) INFO: (Steps: 99431) Finished 90429 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99432/100000 [04:17<05:46,  1.64it/s]2025-10-14 11:22:03,339 (rnn_train:429) INFO: (Steps: 99432) Finished 90430 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99433/100000 [04:17<05:43,  1.65it/s]2025-10-14 11:22:03,925 (rnn_train:429) INFO: (Steps: 99433) Finished 90431 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99434/100000 [04:18<05:35,  1.68it/s]2025-10-14 11:22:04,497 (rnn_train:429) INFO: (Steps: 99434) Finished 90432 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99435/100000 [04:19<05:34,  1.69it/s]2025-10-14 11:22:05,084 (rnn_train:429) INFO: (Steps: 99435) Finished 90433 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99436/100000 [04:19<05:30,  1.71it/s]2025-10-14 11:22:05,652 (rnn_train:429) INFO: (Steps: 99436) Finished 90434 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99437/100000 [04:20<05:23,  1.74it/s]2025-10-14 11:22:06,198 (rnn_train:429) INFO: (Steps: 99437) Finished 90435 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99438/100000 [04:20<05:24,  1.73it/s]2025-10-14 11:22:06,781 (rnn_train:429) INFO: (Steps: 99438) Finished 90436 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99439/100000 [04:21<05:23,  1.74it/s]2025-10-14 11:22:07,357 (rnn_train:429) INFO: (Steps: 99439) Finished 90437 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99440/100000 [04:21<05:26,  1.71it/s]2025-10-14 11:22:07,956 (rnn_train:429) INFO: (Steps: 99440) Finished 90438 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99441/100000 [04:22<05:32,  1.68it/s]2025-10-14 11:22:08,576 (rnn_train:429) INFO: (Steps: 99441) Finished 90439 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99442/100000 [04:23<05:36,  1.66it/s]2025-10-14 11:22:09,198 (rnn_train:429) INFO: (Steps: 99442) Finished 90440 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99443/100000 [04:23<05:27,  1.70it/s]2025-10-14 11:22:09,766 (rnn_train:429) INFO: (Steps: 99443) Finished 90441 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99444/100000 [04:24<05:23,  1.72it/s]2025-10-14 11:22:10,313 (rnn_train:429) INFO: (Steps: 99444) Finished 90442 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99445/100000 [04:24<05:14,  1.76it/s]2025-10-14 11:22:10,856 (rnn_train:429) INFO: (Steps: 99445) Finished 90443 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99446/100000 [04:25<05:11,  1.78it/s]2025-10-14 11:22:11,409 (rnn_train:429) INFO: (Steps: 99446) Finished 90444 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99447/100000 [04:25<05:13,  1.77it/s]2025-10-14 11:22:11,987 (rnn_train:429) INFO: (Steps: 99447) Finished 90445 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99448/100000 [04:26<05:21,  1.71it/s]2025-10-14 11:22:12,610 (rnn_train:429) INFO: (Steps: 99448) Finished 90446 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99449/100000 [04:27<05:19,  1.73it/s]2025-10-14 11:22:13,175 (rnn_train:429) INFO: (Steps: 99449) Finished 90447 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99450/100000 [04:27<05:20,  1.72it/s]2025-10-14 11:22:13,771 (rnn_train:429) INFO: (Steps: 99450) Finished 90448 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99451/100000 [04:28<05:27,  1.68it/s]2025-10-14 11:22:14,391 (rnn_train:429) INFO: (Steps: 99451) Finished 90449 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99452/100000 [04:28<05:28,  1.67it/s]2025-10-14 11:22:14,997 (rnn_train:429) INFO: (Steps: 99452) Finished 90450 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99453/100000 [04:29<05:22,  1.70it/s]2025-10-14 11:22:15,563 (rnn_train:429) INFO: (Steps: 99453) Finished 90451 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99454/100000 [04:30<05:21,  1.70it/s]2025-10-14 11:22:16,159 (rnn_train:429) INFO: (Steps: 99454) Finished 90452 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99455/100000 [04:30<05:26,  1.67it/s]2025-10-14 11:22:16,778 (rnn_train:429) INFO: (Steps: 99455) Finished 90453 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99456/100000 [04:31<05:28,  1.66it/s]2025-10-14 11:22:17,388 (rnn_train:429) INFO: (Steps: 99456) Finished 90454 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99457/100000 [04:31<05:24,  1.67it/s]2025-10-14 11:22:17,983 (rnn_train:429) INFO: (Steps: 99457) Finished 90455 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99458/100000 [04:32<05:21,  1.69it/s]2025-10-14 11:22:18,555 (rnn_train:429) INFO: (Steps: 99458) Finished 90456 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99459/100000 [04:33<05:27,  1.65it/s]2025-10-14 11:22:19,183 (rnn_train:429) INFO: (Steps: 99459) Finished 90457 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99460/100000 [04:33<05:27,  1.65it/s]2025-10-14 11:22:19,815 (rnn_train:429) INFO: (Steps: 99460) Finished 90458 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99461/100000 [04:34<05:27,  1.65it/s]2025-10-14 11:22:20,428 (rnn_train:429) INFO: (Steps: 99461) Finished 90459 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99462/100000 [04:34<05:24,  1.66it/s]2025-10-14 11:22:21,008 (rnn_train:429) INFO: (Steps: 99462) Finished 90460 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99463/100000 [04:35<05:23,  1.66it/s]2025-10-14 11:22:21,605 (rnn_train:429) INFO: (Steps: 99463) Finished 90461 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99464/100000 [04:36<05:16,  1.69it/s]2025-10-14 11:22:22,176 (rnn_train:429) INFO: (Steps: 99464) Finished 90462 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99465/100000 [04:36<05:13,  1.71it/s]2025-10-14 11:22:22,741 (rnn_train:429) INFO: (Steps: 99465) Finished 90463 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99466/100000 [04:37<05:07,  1.74it/s]2025-10-14 11:22:23,296 (rnn_train:429) INFO: (Steps: 99466) Finished 90464 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99467/100000 [04:37<05:07,  1.74it/s]2025-10-14 11:22:23,868 (rnn_train:429) INFO: (Steps: 99467) Finished 90465 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99468/100000 [04:38<05:10,  1.71it/s]2025-10-14 11:22:24,495 (rnn_train:429) INFO: (Steps: 99468) Finished 90466 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99469/100000 [04:39<05:20,  1.66it/s]2025-10-14 11:22:25,123 (rnn_train:429) INFO: (Steps: 99469) Finished 90467 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99470/100000 [04:39<05:16,  1.67it/s]2025-10-14 11:22:25,704 (rnn_train:429) INFO: (Steps: 99470) Finished 90468 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99471/100000 [04:40<05:22,  1.64it/s]2025-10-14 11:22:26,364 (rnn_train:429) INFO: (Steps: 99471) Finished 90469 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99472/100000 [04:40<05:26,  1.62it/s]2025-10-14 11:22:27,000 (rnn_train:429) INFO: (Steps: 99472) Finished 90470 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99473/100000 [04:41<05:25,  1.62it/s]2025-10-14 11:22:27,608 (rnn_train:429) INFO: (Steps: 99473) Finished 90471 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99474/100000 [04:42<05:21,  1.64it/s]2025-10-14 11:22:28,197 (rnn_train:429) INFO: (Steps: 99474) Finished 90472 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99475/100000 [04:42<05:17,  1.65it/s]2025-10-14 11:22:28,799 (rnn_train:429) INFO: (Steps: 99475) Finished 90473 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99476/100000 [04:43<05:22,  1.62it/s]2025-10-14 11:22:29,438 (rnn_train:429) INFO: (Steps: 99476) Finished 90474 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99477/100000 [04:44<05:21,  1.63it/s]2025-10-14 11:22:30,045 (rnn_train:429) INFO: (Steps: 99477) Finished 90475 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99478/100000 [04:44<05:20,  1.63it/s]2025-10-14 11:22:30,647 (rnn_train:429) INFO: (Steps: 99478) Finished 90476 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99479/100000 [04:45<05:10,  1.68it/s]2025-10-14 11:22:31,205 (rnn_train:429) INFO: (Steps: 99479) Finished 90477 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99480/100000 [04:45<05:12,  1.66it/s]2025-10-14 11:22:31,824 (rnn_train:429) INFO: (Steps: 99480) Finished 90478 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99481/100000 [04:46<05:10,  1.67it/s]2025-10-14 11:22:32,409 (rnn_train:429) INFO: (Steps: 99481) Finished 90479 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99482/100000 [04:46<05:10,  1.67it/s]2025-10-14 11:22:33,012 (rnn_train:429) INFO: (Steps: 99482) Finished 90480 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99483/100000 [04:47<05:05,  1.69it/s]2025-10-14 11:22:33,596 (rnn_train:429) INFO: (Steps: 99483) Finished 90481 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99484/100000 [04:48<05:10,  1.66it/s]2025-10-14 11:22:34,208 (rnn_train:429) INFO: (Steps: 99484) Finished 90482 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99485/100000 [04:48<05:07,  1.67it/s]2025-10-14 11:22:34,796 (rnn_train:429) INFO: (Steps: 99485) Finished 90483 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99486/100000 [04:49<05:04,  1.69it/s]2025-10-14 11:22:35,376 (rnn_train:429) INFO: (Steps: 99486) Finished 90484 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99487/100000 [04:49<05:06,  1.68it/s]2025-10-14 11:22:35,992 (rnn_train:429) INFO: (Steps: 99487) Finished 90485 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99488/100000 [04:50<05:09,  1.65it/s]2025-10-14 11:22:36,608 (rnn_train:429) INFO: (Steps: 99488) Finished 90486 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99489/100000 [04:51<05:10,  1.65it/s]2025-10-14 11:22:37,226 (rnn_train:429) INFO: (Steps: 99489) Finished 90487 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99490/100000 [04:51<05:06,  1.66it/s]2025-10-14 11:22:37,810 (rnn_train:429) INFO: (Steps: 99490) Finished 90488 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99491/100000 [04:52<05:02,  1.68it/s]2025-10-14 11:22:38,388 (rnn_train:429) INFO: (Steps: 99491) Finished 90489 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99492/100000 [04:52<05:00,  1.69it/s]2025-10-14 11:22:38,984 (rnn_train:429) INFO: (Steps: 99492) Finished 90490 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99493/100000 [04:53<05:05,  1.66it/s]2025-10-14 11:22:39,598 (rnn_train:429) INFO: (Steps: 99493) Finished 90491 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99494/100000 [04:54<05:03,  1.67it/s]2025-10-14 11:22:40,194 (rnn_train:429) INFO: (Steps: 99494) Finished 90492 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99495/100000 [04:54<05:01,  1.68it/s]2025-10-14 11:22:40,789 (rnn_train:429) INFO: (Steps: 99495) Finished 90493 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99496/100000 [04:55<04:59,  1.68it/s]2025-10-14 11:22:41,376 (rnn_train:429) INFO: (Steps: 99496) Finished 90494 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99497/100000 [04:55<04:57,  1.69it/s]2025-10-14 11:22:41,962 (rnn_train:429) INFO: (Steps: 99497) Finished 90495 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99498/100000 [04:56<04:55,  1.70it/s]2025-10-14 11:22:42,535 (rnn_train:429) INFO: (Steps: 99498) Finished 90496 epoch training (1 steps per epoch).
+[train]:  99%|█████████▉| 99499/100000 [04:57<04:51,  1.72it/s]2025-10-14 11:22:43,116 (rnn_train:429) INFO: (Steps: 99499) Finished 90497 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99500/100000 [04:57<04:53,  1.71it/s]2025-10-14 11:22:43,712 (rnn_train:429) INFO: (Steps: 99500) Finished 90498 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99501/100000 [04:58<04:52,  1.71it/s]2025-10-14 11:22:44,298 (rnn_train:429) INFO: (Steps: 99501) Finished 90499 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99502/100000 [04:58<04:53,  1.70it/s]2025-10-14 11:22:44,883 (rnn_train:429) INFO: (Steps: 99502) Finished 90500 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99503/100000 [04:59<04:54,  1.69it/s]2025-10-14 11:22:45,487 (rnn_train:429) INFO: (Steps: 99503) Finished 90501 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99504/100000 [05:00<04:51,  1.70it/s]2025-10-14 11:22:46,066 (rnn_train:429) INFO: (Steps: 99504) Finished 90502 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99505/100000 [05:00<04:50,  1.71it/s]2025-10-14 11:22:46,646 (rnn_train:429) INFO: (Steps: 99505) Finished 90503 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99506/100000 [05:01<04:51,  1.69it/s]2025-10-14 11:22:47,247 (rnn_train:429) INFO: (Steps: 99506) Finished 90504 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99507/100000 [05:01<04:49,  1.70it/s]2025-10-14 11:22:47,822 (rnn_train:429) INFO: (Steps: 99507) Finished 90505 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99508/100000 [05:02<04:46,  1.72it/s]2025-10-14 11:22:48,400 (rnn_train:429) INFO: (Steps: 99508) Finished 90506 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99509/100000 [05:02<04:50,  1.69it/s]2025-10-14 11:22:49,010 (rnn_train:429) INFO: (Steps: 99509) Finished 90507 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99510/100000 [05:03<04:47,  1.71it/s]2025-10-14 11:22:49,582 (rnn_train:429) INFO: (Steps: 99510) Finished 90508 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99511/100000 [05:04<04:45,  1.71it/s]2025-10-14 11:22:50,162 (rnn_train:429) INFO: (Steps: 99511) Finished 90509 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99512/100000 [05:04<04:51,  1.68it/s]2025-10-14 11:22:50,789 (rnn_train:429) INFO: (Steps: 99512) Finished 90510 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99513/100000 [05:05<04:46,  1.70it/s]2025-10-14 11:22:51,355 (rnn_train:429) INFO: (Steps: 99513) Finished 90511 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99514/100000 [05:05<04:49,  1.68it/s]2025-10-14 11:22:51,968 (rnn_train:429) INFO: (Steps: 99514) Finished 90512 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99515/100000 [05:06<04:46,  1.69it/s]2025-10-14 11:22:52,555 (rnn_train:429) INFO: (Steps: 99515) Finished 90513 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99516/100000 [05:07<04:48,  1.68it/s]2025-10-14 11:22:53,160 (rnn_train:429) INFO: (Steps: 99516) Finished 90514 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99517/100000 [05:07<04:48,  1.67it/s]2025-10-14 11:22:53,758 (rnn_train:429) INFO: (Steps: 99517) Finished 90515 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99518/100000 [05:08<04:52,  1.65it/s]2025-10-14 11:22:54,398 (rnn_train:429) INFO: (Steps: 99518) Finished 90516 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99519/100000 [05:08<04:49,  1.66it/s]2025-10-14 11:22:54,975 (rnn_train:429) INFO: (Steps: 99519) Finished 90517 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99520/100000 [05:09<04:50,  1.65it/s]2025-10-14 11:22:55,594 (rnn_train:429) INFO: (Steps: 99520) Finished 90518 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99521/100000 [05:10<04:49,  1.65it/s]2025-10-14 11:22:56,203 (rnn_train:429) INFO: (Steps: 99521) Finished 90519 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99522/100000 [05:10<04:49,  1.65it/s]2025-10-14 11:22:56,800 (rnn_train:429) INFO: (Steps: 99522) Finished 90520 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99523/100000 [05:11<04:49,  1.65it/s]2025-10-14 11:22:57,408 (rnn_train:429) INFO: (Steps: 99523) Finished 90521 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99524/100000 [05:11<04:42,  1.68it/s]2025-10-14 11:22:57,975 (rnn_train:429) INFO: (Steps: 99524) Finished 90522 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99525/100000 [05:12<04:45,  1.66it/s]2025-10-14 11:22:58,601 (rnn_train:429) INFO: (Steps: 99525) Finished 90523 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99526/100000 [05:13<04:45,  1.66it/s]2025-10-14 11:22:59,201 (rnn_train:429) INFO: (Steps: 99526) Finished 90524 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99527/100000 [05:13<04:41,  1.68it/s]2025-10-14 11:22:59,782 (rnn_train:429) INFO: (Steps: 99527) Finished 90525 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99528/100000 [05:14<04:46,  1.65it/s]2025-10-14 11:23:00,412 (rnn_train:429) INFO: (Steps: 99528) Finished 90526 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99529/100000 [05:15<04:46,  1.65it/s]2025-10-14 11:23:01,038 (rnn_train:429) INFO: (Steps: 99529) Finished 90527 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99530/100000 [05:15<04:53,  1.60it/s]2025-10-14 11:23:01,694 (rnn_train:429) INFO: (Steps: 99530) Finished 90528 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99531/100000 [05:16<04:50,  1.62it/s]2025-10-14 11:23:02,297 (rnn_train:429) INFO: (Steps: 99531) Finished 90529 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99532/100000 [05:16<04:44,  1.65it/s]2025-10-14 11:23:02,864 (rnn_train:429) INFO: (Steps: 99532) Finished 90530 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99533/100000 [05:17<04:39,  1.67it/s]2025-10-14 11:23:03,452 (rnn_train:429) INFO: (Steps: 99533) Finished 90531 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99534/100000 [05:18<04:35,  1.69it/s]2025-10-14 11:23:04,022 (rnn_train:429) INFO: (Steps: 99534) Finished 90532 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99535/100000 [05:18<04:32,  1.71it/s]2025-10-14 11:23:04,607 (rnn_train:429) INFO: (Steps: 99535) Finished 90533 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99536/100000 [05:19<04:33,  1.70it/s]2025-10-14 11:23:05,189 (rnn_train:429) INFO: (Steps: 99536) Finished 90534 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99537/100000 [05:19<04:35,  1.68it/s]2025-10-14 11:23:05,807 (rnn_train:429) INFO: (Steps: 99537) Finished 90535 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99538/100000 [05:20<04:30,  1.71it/s]2025-10-14 11:23:06,364 (rnn_train:429) INFO: (Steps: 99538) Finished 90536 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99539/100000 [05:20<04:34,  1.68it/s]2025-10-14 11:23:06,991 (rnn_train:429) INFO: (Steps: 99539) Finished 90537 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99540/100000 [05:21<04:29,  1.71it/s]2025-10-14 11:23:07,548 (rnn_train:429) INFO: (Steps: 99540) Finished 90538 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99541/100000 [05:22<04:26,  1.72it/s]2025-10-14 11:23:08,114 (rnn_train:429) INFO: (Steps: 99541) Finished 90539 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99542/100000 [05:22<04:24,  1.73it/s]2025-10-14 11:23:08,692 (rnn_train:429) INFO: (Steps: 99542) Finished 90540 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99543/100000 [05:23<04:24,  1.73it/s]2025-10-14 11:23:09,284 (rnn_train:429) INFO: (Steps: 99543) Finished 90541 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99544/100000 [05:23<04:31,  1.68it/s]2025-10-14 11:23:09,910 (rnn_train:429) INFO: (Steps: 99544) Finished 90542 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99545/100000 [05:24<04:27,  1.70it/s]2025-10-14 11:23:10,473 (rnn_train:429) INFO: (Steps: 99545) Finished 90543 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99546/100000 [05:25<04:22,  1.73it/s]2025-10-14 11:23:11,033 (rnn_train:429) INFO: (Steps: 99546) Finished 90544 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99547/100000 [05:25<04:23,  1.72it/s]2025-10-14 11:23:11,619 (rnn_train:429) INFO: (Steps: 99547) Finished 90545 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99548/100000 [05:26<04:24,  1.71it/s]2025-10-14 11:23:12,208 (rnn_train:429) INFO: (Steps: 99548) Finished 90546 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99549/100000 [05:26<04:22,  1.72it/s]2025-10-14 11:23:12,788 (rnn_train:429) INFO: (Steps: 99549) Finished 90547 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99550/100000 [05:27<04:21,  1.72it/s]2025-10-14 11:23:13,358 (rnn_train:429) INFO: (Steps: 99550) Finished 90548 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99551/100000 [05:27<04:24,  1.70it/s]2025-10-14 11:23:13,969 (rnn_train:429) INFO: (Steps: 99551) Finished 90549 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99552/100000 [05:28<04:21,  1.71it/s]2025-10-14 11:23:14,546 (rnn_train:429) INFO: (Steps: 99552) Finished 90550 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99553/100000 [05:29<04:18,  1.73it/s]2025-10-14 11:23:15,115 (rnn_train:429) INFO: (Steps: 99553) Finished 90551 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99554/100000 [05:29<04:17,  1.73it/s]2025-10-14 11:23:15,683 (rnn_train:429) INFO: (Steps: 99554) Finished 90552 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99555/100000 [05:30<04:21,  1.70it/s]2025-10-14 11:23:16,293 (rnn_train:429) INFO: (Steps: 99555) Finished 90553 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99556/100000 [05:30<04:17,  1.73it/s]2025-10-14 11:23:16,860 (rnn_train:429) INFO: (Steps: 99556) Finished 90554 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99557/100000 [05:31<04:20,  1.70it/s]2025-10-14 11:23:17,464 (rnn_train:429) INFO: (Steps: 99557) Finished 90555 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99558/100000 [05:32<04:20,  1.70it/s]2025-10-14 11:23:18,059 (rnn_train:429) INFO: (Steps: 99558) Finished 90556 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99559/100000 [05:32<04:19,  1.70it/s]2025-10-14 11:23:18,640 (rnn_train:429) INFO: (Steps: 99559) Finished 90557 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99560/100000 [05:33<04:20,  1.69it/s]2025-10-14 11:23:19,248 (rnn_train:429) INFO: (Steps: 99560) Finished 90558 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99561/100000 [05:33<04:22,  1.68it/s]2025-10-14 11:23:19,865 (rnn_train:429) INFO: (Steps: 99561) Finished 90559 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99562/100000 [05:34<04:22,  1.67it/s]2025-10-14 11:23:20,460 (rnn_train:429) INFO: (Steps: 99562) Finished 90560 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99563/100000 [05:35<04:22,  1.67it/s]2025-10-14 11:23:21,054 (rnn_train:429) INFO: (Steps: 99563) Finished 90561 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99564/100000 [05:35<04:20,  1.67it/s]2025-10-14 11:23:21,657 (rnn_train:429) INFO: (Steps: 99564) Finished 90562 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99565/100000 [05:36<04:17,  1.69it/s]2025-10-14 11:23:22,227 (rnn_train:429) INFO: (Steps: 99565) Finished 90563 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99566/100000 [05:36<04:12,  1.72it/s]2025-10-14 11:23:22,792 (rnn_train:429) INFO: (Steps: 99566) Finished 90564 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99567/100000 [05:37<04:12,  1.71it/s]2025-10-14 11:23:23,378 (rnn_train:429) INFO: (Steps: 99567) Finished 90565 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99568/100000 [05:37<04:14,  1.70it/s]2025-10-14 11:23:23,979 (rnn_train:429) INFO: (Steps: 99568) Finished 90566 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99569/100000 [05:38<04:17,  1.67it/s]2025-10-14 11:23:24,604 (rnn_train:429) INFO: (Steps: 99569) Finished 90567 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99570/100000 [05:39<04:18,  1.66it/s]2025-10-14 11:23:25,201 (rnn_train:429) INFO: (Steps: 99570) Finished 90568 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99571/100000 [05:39<04:11,  1.70it/s]2025-10-14 11:23:25,758 (rnn_train:429) INFO: (Steps: 99571) Finished 90569 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99572/100000 [05:40<04:09,  1.72it/s]2025-10-14 11:23:26,334 (rnn_train:429) INFO: (Steps: 99572) Finished 90570 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99573/100000 [05:40<04:05,  1.74it/s]2025-10-14 11:23:26,883 (rnn_train:429) INFO: (Steps: 99573) Finished 90571 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99574/100000 [05:41<04:01,  1.77it/s]2025-10-14 11:23:27,450 (rnn_train:429) INFO: (Steps: 99574) Finished 90572 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99575/100000 [05:42<04:03,  1.75it/s]2025-10-14 11:23:28,025 (rnn_train:429) INFO: (Steps: 99575) Finished 90573 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99576/100000 [05:42<04:02,  1.75it/s]2025-10-14 11:23:28,597 (rnn_train:429) INFO: (Steps: 99576) Finished 90574 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99577/100000 [05:43<04:01,  1.75it/s]2025-10-14 11:23:29,161 (rnn_train:429) INFO: (Steps: 99577) Finished 90575 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99578/100000 [05:43<04:08,  1.70it/s]2025-10-14 11:23:29,785 (rnn_train:429) INFO: (Steps: 99578) Finished 90576 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99579/100000 [05:44<04:02,  1.73it/s]2025-10-14 11:23:30,339 (rnn_train:429) INFO: (Steps: 99579) Finished 90577 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99580/100000 [05:44<04:05,  1.71it/s]2025-10-14 11:23:30,941 (rnn_train:429) INFO: (Steps: 99580) Finished 90578 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99581/100000 [05:45<04:02,  1.73it/s]2025-10-14 11:23:31,511 (rnn_train:429) INFO: (Steps: 99581) Finished 90579 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99582/100000 [05:46<04:01,  1.73it/s]2025-10-14 11:23:32,085 (rnn_train:429) INFO: (Steps: 99582) Finished 90580 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99583/100000 [05:46<04:06,  1.69it/s]2025-10-14 11:23:32,707 (rnn_train:429) INFO: (Steps: 99583) Finished 90581 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99584/100000 [05:47<04:04,  1.70it/s]2025-10-14 11:23:33,290 (rnn_train:429) INFO: (Steps: 99584) Finished 90582 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99585/100000 [05:47<04:01,  1.72it/s]2025-10-14 11:23:33,849 (rnn_train:429) INFO: (Steps: 99585) Finished 90583 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99586/100000 [05:48<04:05,  1.69it/s]2025-10-14 11:23:34,468 (rnn_train:429) INFO: (Steps: 99586) Finished 90584 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99587/100000 [05:49<04:07,  1.67it/s]2025-10-14 11:23:35,080 (rnn_train:429) INFO: (Steps: 99587) Finished 90585 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99588/100000 [05:49<04:00,  1.71it/s]2025-10-14 11:23:35,630 (rnn_train:429) INFO: (Steps: 99588) Finished 90586 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99589/100000 [05:50<04:01,  1.70it/s]2025-10-14 11:23:36,237 (rnn_train:429) INFO: (Steps: 99589) Finished 90587 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99590/100000 [05:50<04:00,  1.71it/s]2025-10-14 11:23:36,811 (rnn_train:429) INFO: (Steps: 99590) Finished 90588 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99591/100000 [05:51<04:02,  1.69it/s]2025-10-14 11:23:37,420 (rnn_train:429) INFO: (Steps: 99591) Finished 90589 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99592/100000 [05:52<04:04,  1.67it/s]2025-10-14 11:23:38,037 (rnn_train:429) INFO: (Steps: 99592) Finished 90590 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99593/100000 [05:52<04:01,  1.69it/s]2025-10-14 11:23:38,616 (rnn_train:429) INFO: (Steps: 99593) Finished 90591 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99594/100000 [05:53<04:04,  1.66it/s]2025-10-14 11:23:39,231 (rnn_train:429) INFO: (Steps: 99594) Finished 90592 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99595/100000 [05:53<04:00,  1.69it/s]2025-10-14 11:23:39,801 (rnn_train:429) INFO: (Steps: 99595) Finished 90593 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99596/100000 [05:54<03:58,  1.70it/s]2025-10-14 11:23:40,388 (rnn_train:429) INFO: (Steps: 99596) Finished 90594 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99597/100000 [05:54<03:57,  1.69it/s]2025-10-14 11:23:40,978 (rnn_train:429) INFO: (Steps: 99597) Finished 90595 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99598/100000 [05:55<03:55,  1.71it/s]2025-10-14 11:23:41,550 (rnn_train:429) INFO: (Steps: 99598) Finished 90596 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99599/100000 [05:56<03:52,  1.72it/s]2025-10-14 11:23:42,121 (rnn_train:429) INFO: (Steps: 99599) Finished 90597 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99600/100000 [05:56<03:51,  1.73it/s]2025-10-14 11:23:42,702 (rnn_train:429) INFO: (Steps: 99600) Finished 90598 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99601/100000 [05:57<03:50,  1.73it/s]2025-10-14 11:23:43,268 (rnn_train:429) INFO: (Steps: 99601) Finished 90599 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99602/100000 [05:57<03:48,  1.74it/s]2025-10-14 11:23:43,841 (rnn_train:429) INFO: (Steps: 99602) Finished 90600 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99603/100000 [05:58<03:49,  1.73it/s]2025-10-14 11:23:44,425 (rnn_train:429) INFO: (Steps: 99603) Finished 90601 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99604/100000 [05:58<03:50,  1.72it/s]2025-10-14 11:23:45,012 (rnn_train:429) INFO: (Steps: 99604) Finished 90602 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99605/100000 [05:59<03:47,  1.73it/s]2025-10-14 11:23:45,579 (rnn_train:429) INFO: (Steps: 99605) Finished 90603 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99606/100000 [06:00<03:47,  1.73it/s]2025-10-14 11:23:46,164 (rnn_train:429) INFO: (Steps: 99606) Finished 90604 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99607/100000 [06:00<03:54,  1.67it/s]2025-10-14 11:23:46,807 (rnn_train:429) INFO: (Steps: 99607) Finished 90605 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99608/100000 [06:01<03:54,  1.67it/s]2025-10-14 11:23:47,403 (rnn_train:429) INFO: (Steps: 99608) Finished 90606 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99609/100000 [06:01<03:52,  1.68it/s]2025-10-14 11:23:47,990 (rnn_train:429) INFO: (Steps: 99609) Finished 90607 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99610/100000 [06:02<03:52,  1.68it/s]2025-10-14 11:23:48,592 (rnn_train:429) INFO: (Steps: 99610) Finished 90608 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99611/100000 [06:03<03:51,  1.68it/s]2025-10-14 11:23:49,183 (rnn_train:429) INFO: (Steps: 99611) Finished 90609 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99612/100000 [06:03<03:46,  1.71it/s]2025-10-14 11:23:49,736 (rnn_train:429) INFO: (Steps: 99612) Finished 90610 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99613/100000 [06:04<03:42,  1.74it/s]2025-10-14 11:23:50,304 (rnn_train:429) INFO: (Steps: 99613) Finished 90611 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99614/100000 [06:04<03:42,  1.73it/s]2025-10-14 11:23:50,874 (rnn_train:429) INFO: (Steps: 99614) Finished 90612 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99615/100000 [06:05<03:46,  1.70it/s]2025-10-14 11:23:51,490 (rnn_train:429) INFO: (Steps: 99615) Finished 90613 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99616/100000 [06:06<03:41,  1.73it/s]2025-10-14 11:23:52,035 (rnn_train:429) INFO: (Steps: 99616) Finished 90614 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99617/100000 [06:06<03:40,  1.73it/s]2025-10-14 11:23:52,610 (rnn_train:429) INFO: (Steps: 99617) Finished 90615 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99618/100000 [06:07<03:37,  1.75it/s]2025-10-14 11:23:53,171 (rnn_train:429) INFO: (Steps: 99618) Finished 90616 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99619/100000 [06:07<03:36,  1.76it/s]2025-10-14 11:23:53,723 (rnn_train:429) INFO: (Steps: 99619) Finished 90617 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99620/100000 [06:08<03:30,  1.80it/s]2025-10-14 11:23:54,252 (rnn_train:429) INFO: (Steps: 99620) Finished 90618 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99621/100000 [06:08<03:33,  1.78it/s]2025-10-14 11:23:54,833 (rnn_train:429) INFO: (Steps: 99621) Finished 90619 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99622/100000 [06:09<03:33,  1.77it/s]2025-10-14 11:23:55,403 (rnn_train:429) INFO: (Steps: 99622) Finished 90620 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99623/100000 [06:09<03:33,  1.77it/s]2025-10-14 11:23:55,974 (rnn_train:429) INFO: (Steps: 99623) Finished 90621 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99624/100000 [06:10<03:32,  1.77it/s]2025-10-14 11:23:56,541 (rnn_train:429) INFO: (Steps: 99624) Finished 90622 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99625/100000 [06:11<03:37,  1.72it/s]2025-10-14 11:23:57,149 (rnn_train:429) INFO: (Steps: 99625) Finished 90623 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99626/100000 [06:11<03:36,  1.72it/s]2025-10-14 11:23:57,740 (rnn_train:429) INFO: (Steps: 99626) Finished 90624 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99627/100000 [06:12<03:35,  1.73it/s]2025-10-14 11:23:58,314 (rnn_train:429) INFO: (Steps: 99627) Finished 90625 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99628/100000 [06:12<03:35,  1.73it/s]2025-10-14 11:23:58,888 (rnn_train:429) INFO: (Steps: 99628) Finished 90626 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99629/100000 [06:13<03:42,  1.66it/s]2025-10-14 11:23:59,543 (rnn_train:429) INFO: (Steps: 99629) Finished 90627 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99630/100000 [06:14<03:43,  1.66it/s]2025-10-14 11:24:00,166 (rnn_train:429) INFO: (Steps: 99630) Finished 90628 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99631/100000 [06:14<03:53,  1.58it/s]2025-10-14 11:24:00,849 (rnn_train:429) INFO: (Steps: 99631) Finished 90629 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99632/100000 [06:15<03:51,  1.59it/s]2025-10-14 11:24:01,471 (rnn_train:429) INFO: (Steps: 99632) Finished 90630 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99633/100000 [06:16<03:48,  1.61it/s]2025-10-14 11:24:02,084 (rnn_train:429) INFO: (Steps: 99633) Finished 90631 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99634/100000 [06:16<03:45,  1.62it/s]2025-10-14 11:24:02,680 (rnn_train:429) INFO: (Steps: 99634) Finished 90632 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99635/100000 [06:17<03:42,  1.64it/s]2025-10-14 11:24:03,264 (rnn_train:429) INFO: (Steps: 99635) Finished 90633 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99636/100000 [06:17<03:38,  1.67it/s]2025-10-14 11:24:03,849 (rnn_train:429) INFO: (Steps: 99636) Finished 90634 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99637/100000 [06:18<03:36,  1.67it/s]2025-10-14 11:24:04,443 (rnn_train:429) INFO: (Steps: 99637) Finished 90635 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99638/100000 [06:19<03:37,  1.66it/s]2025-10-14 11:24:05,051 (rnn_train:429) INFO: (Steps: 99638) Finished 90636 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99639/100000 [06:19<03:33,  1.69it/s]2025-10-14 11:24:05,616 (rnn_train:429) INFO: (Steps: 99639) Finished 90637 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99640/100000 [06:20<03:36,  1.66it/s]2025-10-14 11:24:06,240 (rnn_train:429) INFO: (Steps: 99640) Finished 90638 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99641/100000 [06:20<03:35,  1.67it/s]2025-10-14 11:24:06,836 (rnn_train:429) INFO: (Steps: 99641) Finished 90639 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99642/100000 [06:21<03:30,  1.70it/s]2025-10-14 11:24:07,394 (rnn_train:429) INFO: (Steps: 99642) Finished 90640 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99643/100000 [06:21<03:27,  1.72it/s]2025-10-14 11:24:07,966 (rnn_train:429) INFO: (Steps: 99643) Finished 90641 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99644/100000 [06:22<03:29,  1.70it/s]2025-10-14 11:24:08,581 (rnn_train:429) INFO: (Steps: 99644) Finished 90642 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99645/100000 [06:23<03:32,  1.67it/s]2025-10-14 11:24:09,199 (rnn_train:429) INFO: (Steps: 99645) Finished 90643 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99646/100000 [06:23<03:35,  1.64it/s]2025-10-14 11:24:09,820 (rnn_train:429) INFO: (Steps: 99646) Finished 90644 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99647/100000 [06:24<03:32,  1.66it/s]2025-10-14 11:24:10,413 (rnn_train:429) INFO: (Steps: 99647) Finished 90645 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99648/100000 [06:25<03:34,  1.64it/s]2025-10-14 11:24:11,040 (rnn_train:429) INFO: (Steps: 99648) Finished 90646 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99649/100000 [06:25<03:29,  1.68it/s]2025-10-14 11:24:11,600 (rnn_train:429) INFO: (Steps: 99649) Finished 90647 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99650/100000 [06:26<03:29,  1.67it/s]2025-10-14 11:24:12,202 (rnn_train:429) INFO: (Steps: 99650) Finished 90648 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99651/100000 [06:26<03:27,  1.68it/s]2025-10-14 11:24:12,793 (rnn_train:429) INFO: (Steps: 99651) Finished 90649 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99652/100000 [06:27<03:24,  1.70it/s]2025-10-14 11:24:13,364 (rnn_train:429) INFO: (Steps: 99652) Finished 90650 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99653/100000 [06:27<03:22,  1.71it/s]2025-10-14 11:24:13,939 (rnn_train:429) INFO: (Steps: 99653) Finished 90651 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99654/100000 [06:28<03:26,  1.68it/s]2025-10-14 11:24:14,565 (rnn_train:429) INFO: (Steps: 99654) Finished 90652 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99655/100000 [06:29<03:29,  1.65it/s]2025-10-14 11:24:15,195 (rnn_train:429) INFO: (Steps: 99655) Finished 90653 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99656/100000 [06:29<03:28,  1.65it/s]2025-10-14 11:24:15,795 (rnn_train:429) INFO: (Steps: 99656) Finished 90654 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99657/100000 [06:30<03:25,  1.67it/s]2025-10-14 11:24:16,372 (rnn_train:429) INFO: (Steps: 99657) Finished 90655 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99658/100000 [06:30<03:22,  1.69it/s]2025-10-14 11:24:16,953 (rnn_train:429) INFO: (Steps: 99658) Finished 90656 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99659/100000 [06:31<03:21,  1.69it/s]2025-10-14 11:24:17,548 (rnn_train:429) INFO: (Steps: 99659) Finished 90657 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99660/100000 [06:32<03:20,  1.69it/s]2025-10-14 11:24:18,137 (rnn_train:429) INFO: (Steps: 99660) Finished 90658 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99661/100000 [06:32<03:20,  1.69it/s]2025-10-14 11:24:18,720 (rnn_train:429) INFO: (Steps: 99661) Finished 90659 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99662/100000 [06:33<03:22,  1.67it/s]2025-10-14 11:24:19,333 (rnn_train:429) INFO: (Steps: 99662) Finished 90660 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99663/100000 [06:33<03:18,  1.70it/s]2025-10-14 11:24:19,907 (rnn_train:429) INFO: (Steps: 99663) Finished 90661 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99664/100000 [06:34<03:21,  1.67it/s]2025-10-14 11:24:20,534 (rnn_train:429) INFO: (Steps: 99664) Finished 90662 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99665/100000 [06:35<03:21,  1.66it/s]2025-10-14 11:24:21,143 (rnn_train:429) INFO: (Steps: 99665) Finished 90663 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99666/100000 [06:35<03:22,  1.65it/s]2025-10-14 11:24:21,762 (rnn_train:429) INFO: (Steps: 99666) Finished 90664 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99667/100000 [06:36<03:28,  1.60it/s]2025-10-14 11:24:22,433 (rnn_train:429) INFO: (Steps: 99667) Finished 90665 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99668/100000 [06:37<03:28,  1.59it/s]2025-10-14 11:24:23,061 (rnn_train:429) INFO: (Steps: 99668) Finished 90666 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99669/100000 [06:37<03:26,  1.60it/s]2025-10-14 11:24:23,687 (rnn_train:429) INFO: (Steps: 99669) Finished 90667 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99670/100000 [06:38<03:25,  1.61it/s]2025-10-14 11:24:24,293 (rnn_train:429) INFO: (Steps: 99670) Finished 90668 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99671/100000 [06:38<03:18,  1.66it/s]2025-10-14 11:24:24,855 (rnn_train:429) INFO: (Steps: 99671) Finished 90669 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99672/100000 [06:39<03:15,  1.68it/s]2025-10-14 11:24:25,436 (rnn_train:429) INFO: (Steps: 99672) Finished 90670 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99673/100000 [06:40<03:14,  1.68it/s]2025-10-14 11:24:26,024 (rnn_train:429) INFO: (Steps: 99673) Finished 90671 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99674/100000 [06:40<03:10,  1.71it/s]2025-10-14 11:24:26,593 (rnn_train:429) INFO: (Steps: 99674) Finished 90672 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99675/100000 [06:41<03:14,  1.67it/s]2025-10-14 11:24:27,215 (rnn_train:429) INFO: (Steps: 99675) Finished 90673 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99676/100000 [06:41<03:14,  1.67it/s]2025-10-14 11:24:27,821 (rnn_train:429) INFO: (Steps: 99676) Finished 90674 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99677/100000 [06:42<03:10,  1.69it/s]2025-10-14 11:24:28,396 (rnn_train:429) INFO: (Steps: 99677) Finished 90675 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99678/100000 [06:42<03:08,  1.71it/s]2025-10-14 11:24:28,959 (rnn_train:429) INFO: (Steps: 99678) Finished 90676 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99679/100000 [06:43<03:10,  1.69it/s]2025-10-14 11:24:29,572 (rnn_train:429) INFO: (Steps: 99679) Finished 90677 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99680/100000 [06:44<03:11,  1.67it/s]2025-10-14 11:24:30,181 (rnn_train:429) INFO: (Steps: 99680) Finished 90678 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99681/100000 [06:44<03:07,  1.70it/s]2025-10-14 11:24:30,741 (rnn_train:429) INFO: (Steps: 99681) Finished 90679 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99682/100000 [06:45<03:10,  1.67it/s]2025-10-14 11:24:31,368 (rnn_train:429) INFO: (Steps: 99682) Finished 90680 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99683/100000 [06:45<03:07,  1.69it/s]2025-10-14 11:24:31,953 (rnn_train:429) INFO: (Steps: 99683) Finished 90681 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99684/100000 [06:46<03:06,  1.69it/s]2025-10-14 11:24:32,542 (rnn_train:429) INFO: (Steps: 99684) Finished 90682 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99685/100000 [06:47<03:05,  1.69it/s]2025-10-14 11:24:33,129 (rnn_train:429) INFO: (Steps: 99685) Finished 90683 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99686/100000 [06:47<03:07,  1.67it/s]2025-10-14 11:24:33,739 (rnn_train:429) INFO: (Steps: 99686) Finished 90684 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99687/100000 [06:48<03:09,  1.65it/s]2025-10-14 11:24:34,368 (rnn_train:429) INFO: (Steps: 99687) Finished 90685 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99688/100000 [06:48<03:06,  1.67it/s]2025-10-14 11:24:34,941 (rnn_train:429) INFO: (Steps: 99688) Finished 90686 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99689/100000 [06:49<03:02,  1.70it/s]2025-10-14 11:24:35,507 (rnn_train:429) INFO: (Steps: 99689) Finished 90687 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99690/100000 [06:50<03:01,  1.71it/s]2025-10-14 11:24:36,085 (rnn_train:429) INFO: (Steps: 99690) Finished 90688 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99691/100000 [06:50<02:59,  1.72it/s]2025-10-14 11:24:36,658 (rnn_train:429) INFO: (Steps: 99691) Finished 90689 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99692/100000 [06:51<03:00,  1.70it/s]2025-10-14 11:24:37,264 (rnn_train:429) INFO: (Steps: 99692) Finished 90690 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99693/100000 [06:51<02:59,  1.71it/s]2025-10-14 11:24:37,843 (rnn_train:429) INFO: (Steps: 99693) Finished 90691 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99694/100000 [06:52<03:01,  1.68it/s]2025-10-14 11:24:38,458 (rnn_train:429) INFO: (Steps: 99694) Finished 90692 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99695/100000 [06:53<03:03,  1.66it/s]2025-10-14 11:24:39,074 (rnn_train:429) INFO: (Steps: 99695) Finished 90693 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99696/100000 [06:53<03:00,  1.68it/s]2025-10-14 11:24:39,647 (rnn_train:429) INFO: (Steps: 99696) Finished 90694 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99697/100000 [06:54<02:57,  1.70it/s]2025-10-14 11:24:40,229 (rnn_train:429) INFO: (Steps: 99697) Finished 90695 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99698/100000 [06:54<03:00,  1.67it/s]2025-10-14 11:24:40,851 (rnn_train:429) INFO: (Steps: 99698) Finished 90696 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99699/100000 [06:55<03:01,  1.66it/s]2025-10-14 11:24:41,460 (rnn_train:429) INFO: (Steps: 99699) Finished 90697 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99700/100000 [06:56<03:02,  1.65it/s]2025-10-14 11:24:42,080 (rnn_train:429) INFO: (Steps: 99700) Finished 90698 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99701/100000 [06:56<02:59,  1.67it/s]2025-10-14 11:24:42,657 (rnn_train:429) INFO: (Steps: 99701) Finished 90699 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99702/100000 [06:57<02:56,  1.68it/s]2025-10-14 11:24:43,242 (rnn_train:429) INFO: (Steps: 99702) Finished 90700 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99703/100000 [06:57<02:54,  1.70it/s]2025-10-14 11:24:43,817 (rnn_train:429) INFO: (Steps: 99703) Finished 90701 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99704/100000 [06:58<02:51,  1.73it/s]2025-10-14 11:24:44,372 (rnn_train:429) INFO: (Steps: 99704) Finished 90702 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99705/100000 [06:58<02:49,  1.74it/s]2025-10-14 11:24:44,942 (rnn_train:429) INFO: (Steps: 99705) Finished 90703 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99706/100000 [06:59<02:49,  1.73it/s]2025-10-14 11:24:45,516 (rnn_train:429) INFO: (Steps: 99706) Finished 90704 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99707/100000 [07:00<02:53,  1.69it/s]2025-10-14 11:24:46,144 (rnn_train:429) INFO: (Steps: 99707) Finished 90705 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99708/100000 [07:00<02:55,  1.66it/s]2025-10-14 11:24:46,769 (rnn_train:429) INFO: (Steps: 99708) Finished 90706 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99709/100000 [07:01<02:53,  1.68it/s]2025-10-14 11:24:47,348 (rnn_train:429) INFO: (Steps: 99709) Finished 90707 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99710/100000 [07:01<02:53,  1.68it/s]2025-10-14 11:24:47,943 (rnn_train:429) INFO: (Steps: 99710) Finished 90708 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99711/100000 [07:02<02:51,  1.69it/s]2025-10-14 11:24:48,534 (rnn_train:429) INFO: (Steps: 99711) Finished 90709 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99712/100000 [07:03<02:49,  1.70it/s]2025-10-14 11:24:49,115 (rnn_train:429) INFO: (Steps: 99712) Finished 90710 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99713/100000 [07:03<02:47,  1.72it/s]2025-10-14 11:24:49,687 (rnn_train:429) INFO: (Steps: 99713) Finished 90711 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99714/100000 [07:04<02:47,  1.70it/s]2025-10-14 11:24:50,280 (rnn_train:429) INFO: (Steps: 99714) Finished 90712 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99715/100000 [07:04<02:48,  1.70it/s]2025-10-14 11:24:50,876 (rnn_train:429) INFO: (Steps: 99715) Finished 90713 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99716/100000 [07:05<02:49,  1.68it/s]2025-10-14 11:24:51,486 (rnn_train:429) INFO: (Steps: 99716) Finished 90714 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99717/100000 [07:06<02:44,  1.72it/s]2025-10-14 11:24:52,036 (rnn_train:429) INFO: (Steps: 99717) Finished 90715 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99718/100000 [07:06<02:46,  1.70it/s]2025-10-14 11:24:52,648 (rnn_train:429) INFO: (Steps: 99718) Finished 90716 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99719/100000 [07:07<02:47,  1.68it/s]2025-10-14 11:24:53,252 (rnn_train:429) INFO: (Steps: 99719) Finished 90717 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99720/100000 [07:07<02:49,  1.66it/s]2025-10-14 11:24:53,878 (rnn_train:429) INFO: (Steps: 99720) Finished 90718 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99721/100000 [07:08<02:45,  1.68it/s]2025-10-14 11:24:54,454 (rnn_train:429) INFO: (Steps: 99721) Finished 90719 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99722/100000 [07:09<02:44,  1.69it/s]2025-10-14 11:24:55,038 (rnn_train:429) INFO: (Steps: 99722) Finished 90720 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99723/100000 [07:09<02:40,  1.73it/s]2025-10-14 11:24:55,597 (rnn_train:429) INFO: (Steps: 99723) Finished 90721 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99724/100000 [07:10<02:41,  1.71it/s]2025-10-14 11:24:56,179 (rnn_train:429) INFO: (Steps: 99724) Finished 90722 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99725/100000 [07:10<02:40,  1.72it/s]2025-10-14 11:24:56,758 (rnn_train:429) INFO: (Steps: 99725) Finished 90723 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99726/100000 [07:11<02:41,  1.69it/s]2025-10-14 11:24:57,370 (rnn_train:429) INFO: (Steps: 99726) Finished 90724 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99727/100000 [07:11<02:41,  1.69it/s]2025-10-14 11:24:57,969 (rnn_train:429) INFO: (Steps: 99727) Finished 90725 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99728/100000 [07:12<02:41,  1.69it/s]2025-10-14 11:24:58,555 (rnn_train:429) INFO: (Steps: 99728) Finished 90726 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99729/100000 [07:13<02:42,  1.67it/s]2025-10-14 11:24:59,163 (rnn_train:429) INFO: (Steps: 99729) Finished 90727 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99730/100000 [07:13<02:41,  1.67it/s]2025-10-14 11:24:59,767 (rnn_train:429) INFO: (Steps: 99730) Finished 90728 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99731/100000 [07:14<02:39,  1.68it/s]2025-10-14 11:25:00,351 (rnn_train:429) INFO: (Steps: 99731) Finished 90729 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99732/100000 [07:14<02:41,  1.66it/s]2025-10-14 11:25:00,967 (rnn_train:429) INFO: (Steps: 99732) Finished 90730 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99733/100000 [07:15<02:37,  1.70it/s]2025-10-14 11:25:01,528 (rnn_train:429) INFO: (Steps: 99733) Finished 90731 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99734/100000 [07:16<02:38,  1.68it/s]2025-10-14 11:25:02,140 (rnn_train:429) INFO: (Steps: 99734) Finished 90732 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99735/100000 [07:16<02:37,  1.69it/s]2025-10-14 11:25:02,724 (rnn_train:429) INFO: (Steps: 99735) Finished 90733 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99736/100000 [07:17<02:36,  1.69it/s]2025-10-14 11:25:03,321 (rnn_train:429) INFO: (Steps: 99736) Finished 90734 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99737/100000 [07:17<02:37,  1.67it/s]2025-10-14 11:25:03,947 (rnn_train:429) INFO: (Steps: 99737) Finished 90735 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99738/100000 [07:18<02:36,  1.67it/s]2025-10-14 11:25:04,526 (rnn_train:429) INFO: (Steps: 99738) Finished 90736 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99739/100000 [07:19<02:36,  1.67it/s]2025-10-14 11:25:05,126 (rnn_train:429) INFO: (Steps: 99739) Finished 90737 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99740/100000 [07:19<02:34,  1.69it/s]2025-10-14 11:25:05,711 (rnn_train:429) INFO: (Steps: 99740) Finished 90738 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99741/100000 [07:20<02:31,  1.71it/s]2025-10-14 11:25:06,274 (rnn_train:429) INFO: (Steps: 99741) Finished 90739 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99742/100000 [07:20<02:34,  1.67it/s]2025-10-14 11:25:06,907 (rnn_train:429) INFO: (Steps: 99742) Finished 90740 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99743/100000 [07:21<02:33,  1.67it/s]2025-10-14 11:25:07,512 (rnn_train:429) INFO: (Steps: 99743) Finished 90741 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99744/100000 [07:22<02:31,  1.69it/s]2025-10-14 11:25:08,083 (rnn_train:429) INFO: (Steps: 99744) Finished 90742 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99745/100000 [07:22<02:32,  1.68it/s]2025-10-14 11:25:08,687 (rnn_train:429) INFO: (Steps: 99745) Finished 90743 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99746/100000 [07:23<02:33,  1.65it/s]2025-10-14 11:25:09,312 (rnn_train:429) INFO: (Steps: 99746) Finished 90744 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99747/100000 [07:23<02:34,  1.64it/s]2025-10-14 11:25:09,937 (rnn_train:429) INFO: (Steps: 99747) Finished 90745 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99748/100000 [07:24<02:32,  1.66it/s]2025-10-14 11:25:10,521 (rnn_train:429) INFO: (Steps: 99748) Finished 90746 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99749/100000 [07:25<02:29,  1.68it/s]2025-10-14 11:25:11,096 (rnn_train:429) INFO: (Steps: 99749) Finished 90747 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99750/100000 [07:25<02:29,  1.67it/s]2025-10-14 11:25:11,702 (rnn_train:429) INFO: (Steps: 99750) Finished 90748 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99751/100000 [07:26<02:31,  1.64it/s]2025-10-14 11:25:12,336 (rnn_train:429) INFO: (Steps: 99751) Finished 90749 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99752/100000 [07:26<02:32,  1.62it/s]2025-10-14 11:25:12,971 (rnn_train:429) INFO: (Steps: 99752) Finished 90750 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99753/100000 [07:27<02:34,  1.60it/s]2025-10-14 11:25:13,619 (rnn_train:429) INFO: (Steps: 99753) Finished 90751 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99754/100000 [07:28<02:30,  1.63it/s]2025-10-14 11:25:14,201 (rnn_train:429) INFO: (Steps: 99754) Finished 90752 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99755/100000 [07:28<02:28,  1.64it/s]2025-10-14 11:25:14,794 (rnn_train:429) INFO: (Steps: 99755) Finished 90753 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99756/100000 [07:29<02:27,  1.66it/s]2025-10-14 11:25:15,389 (rnn_train:429) INFO: (Steps: 99756) Finished 90754 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99757/100000 [07:29<02:23,  1.69it/s]2025-10-14 11:25:15,951 (rnn_train:429) INFO: (Steps: 99757) Finished 90755 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99758/100000 [07:30<02:24,  1.67it/s]2025-10-14 11:25:16,576 (rnn_train:429) INFO: (Steps: 99758) Finished 90756 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99759/100000 [07:31<02:25,  1.66it/s]2025-10-14 11:25:17,188 (rnn_train:429) INFO: (Steps: 99759) Finished 90757 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99760/100000 [07:31<02:23,  1.68it/s]2025-10-14 11:25:17,762 (rnn_train:429) INFO: (Steps: 99760) Finished 90758 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99761/100000 [07:32<02:23,  1.66it/s]2025-10-14 11:25:18,390 (rnn_train:429) INFO: (Steps: 99761) Finished 90759 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99762/100000 [07:33<02:27,  1.61it/s]2025-10-14 11:25:19,047 (rnn_train:429) INFO: (Steps: 99762) Finished 90760 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99763/100000 [07:33<02:25,  1.62it/s]2025-10-14 11:25:19,650 (rnn_train:429) INFO: (Steps: 99763) Finished 90761 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99764/100000 [07:34<02:27,  1.60it/s]2025-10-14 11:25:20,292 (rnn_train:429) INFO: (Steps: 99764) Finished 90762 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99765/100000 [07:34<02:28,  1.59it/s]2025-10-14 11:25:20,934 (rnn_train:429) INFO: (Steps: 99765) Finished 90763 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99766/100000 [07:35<02:24,  1.62it/s]2025-10-14 11:25:21,508 (rnn_train:429) INFO: (Steps: 99766) Finished 90764 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99767/100000 [07:36<02:20,  1.65it/s]2025-10-14 11:25:22,090 (rnn_train:429) INFO: (Steps: 99767) Finished 90765 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99768/100000 [07:36<02:21,  1.64it/s]2025-10-14 11:25:22,718 (rnn_train:429) INFO: (Steps: 99768) Finished 90766 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99769/100000 [07:37<02:19,  1.66it/s]2025-10-14 11:25:23,305 (rnn_train:429) INFO: (Steps: 99769) Finished 90767 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99770/100000 [07:37<02:19,  1.65it/s]2025-10-14 11:25:23,918 (rnn_train:429) INFO: (Steps: 99770) Finished 90768 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99771/100000 [07:38<02:18,  1.65it/s]2025-10-14 11:25:24,538 (rnn_train:429) INFO: (Steps: 99771) Finished 90769 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99772/100000 [07:39<02:19,  1.64it/s]2025-10-14 11:25:25,138 (rnn_train:429) INFO: (Steps: 99772) Finished 90770 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99773/100000 [07:39<02:16,  1.66it/s]2025-10-14 11:25:25,724 (rnn_train:429) INFO: (Steps: 99773) Finished 90771 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99774/100000 [07:40<02:12,  1.71it/s]2025-10-14 11:25:26,273 (rnn_train:429) INFO: (Steps: 99774) Finished 90772 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99775/100000 [07:40<02:10,  1.73it/s]2025-10-14 11:25:26,833 (rnn_train:429) INFO: (Steps: 99775) Finished 90773 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99776/100000 [07:41<02:13,  1.68it/s]2025-10-14 11:25:27,466 (rnn_train:429) INFO: (Steps: 99776) Finished 90774 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99777/100000 [07:42<02:13,  1.67it/s]2025-10-14 11:25:28,076 (rnn_train:429) INFO: (Steps: 99777) Finished 90775 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99778/100000 [07:42<02:15,  1.63it/s]2025-10-14 11:25:28,721 (rnn_train:429) INFO: (Steps: 99778) Finished 90776 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99779/100000 [07:43<02:17,  1.61it/s]2025-10-14 11:25:29,367 (rnn_train:429) INFO: (Steps: 99779) Finished 90777 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99780/100000 [07:43<02:13,  1.65it/s]2025-10-14 11:25:29,935 (rnn_train:429) INFO: (Steps: 99780) Finished 90778 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99781/100000 [07:44<02:14,  1.63it/s]2025-10-14 11:25:30,571 (rnn_train:429) INFO: (Steps: 99781) Finished 90779 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99782/100000 [07:45<02:13,  1.64it/s]2025-10-14 11:25:31,172 (rnn_train:429) INFO: (Steps: 99782) Finished 90780 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99783/100000 [07:45<02:13,  1.62it/s]2025-10-14 11:25:31,805 (rnn_train:429) INFO: (Steps: 99783) Finished 90781 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99784/100000 [07:46<02:10,  1.65it/s]2025-10-14 11:25:32,375 (rnn_train:429) INFO: (Steps: 99784) Finished 90782 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99785/100000 [07:46<02:09,  1.66it/s]2025-10-14 11:25:32,984 (rnn_train:429) INFO: (Steps: 99785) Finished 90783 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99786/100000 [07:47<02:10,  1.65it/s]2025-10-14 11:25:33,588 (rnn_train:429) INFO: (Steps: 99786) Finished 90784 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99787/100000 [07:48<02:09,  1.64it/s]2025-10-14 11:25:34,210 (rnn_train:429) INFO: (Steps: 99787) Finished 90785 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99788/100000 [07:48<02:07,  1.67it/s]2025-10-14 11:25:34,785 (rnn_train:429) INFO: (Steps: 99788) Finished 90786 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99789/100000 [07:49<02:06,  1.67it/s]2025-10-14 11:25:35,383 (rnn_train:429) INFO: (Steps: 99789) Finished 90787 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99790/100000 [07:49<02:05,  1.67it/s]2025-10-14 11:25:35,983 (rnn_train:429) INFO: (Steps: 99790) Finished 90788 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99791/100000 [07:50<02:07,  1.64it/s]2025-10-14 11:25:36,611 (rnn_train:429) INFO: (Steps: 99791) Finished 90789 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99792/100000 [07:51<02:05,  1.66it/s]2025-10-14 11:25:37,207 (rnn_train:429) INFO: (Steps: 99792) Finished 90790 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99793/100000 [07:51<02:04,  1.66it/s]2025-10-14 11:25:37,816 (rnn_train:429) INFO: (Steps: 99793) Finished 90791 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99794/100000 [07:52<02:05,  1.64it/s]2025-10-14 11:25:38,431 (rnn_train:429) INFO: (Steps: 99794) Finished 90792 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99795/100000 [07:52<02:02,  1.67it/s]2025-10-14 11:25:39,002 (rnn_train:429) INFO: (Steps: 99795) Finished 90793 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99796/100000 [07:53<02:02,  1.66it/s]2025-10-14 11:25:39,619 (rnn_train:429) INFO: (Steps: 99796) Finished 90794 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99797/100000 [07:54<02:05,  1.62it/s]2025-10-14 11:25:40,280 (rnn_train:429) INFO: (Steps: 99797) Finished 90795 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99798/100000 [07:54<02:05,  1.62it/s]2025-10-14 11:25:40,912 (rnn_train:429) INFO: (Steps: 99798) Finished 90796 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99799/100000 [07:55<02:05,  1.60it/s]2025-10-14 11:25:41,529 (rnn_train:429) INFO: (Steps: 99799) Finished 90797 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99800/100000 [07:56<02:01,  1.65it/s]2025-10-14 11:25:42,100 (rnn_train:429) INFO: (Steps: 99800) Finished 90798 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99801/100000 [07:56<02:02,  1.62it/s]2025-10-14 11:25:42,728 (rnn_train:429) INFO: (Steps: 99801) Finished 90799 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99802/100000 [07:57<02:02,  1.61it/s]2025-10-14 11:25:43,359 (rnn_train:429) INFO: (Steps: 99802) Finished 90800 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99803/100000 [07:57<01:57,  1.67it/s]2025-10-14 11:25:43,905 (rnn_train:429) INFO: (Steps: 99803) Finished 90801 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99804/100000 [07:58<01:56,  1.68it/s]2025-10-14 11:25:44,486 (rnn_train:429) INFO: (Steps: 99804) Finished 90802 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99805/100000 [07:59<01:54,  1.71it/s]2025-10-14 11:25:45,056 (rnn_train:429) INFO: (Steps: 99805) Finished 90803 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99806/100000 [07:59<01:52,  1.72it/s]2025-10-14 11:25:45,623 (rnn_train:429) INFO: (Steps: 99806) Finished 90804 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99807/100000 [08:00<01:51,  1.74it/s]2025-10-14 11:25:46,183 (rnn_train:429) INFO: (Steps: 99807) Finished 90805 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99808/100000 [08:00<01:51,  1.73it/s]2025-10-14 11:25:46,774 (rnn_train:429) INFO: (Steps: 99808) Finished 90806 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99809/100000 [08:01<01:49,  1.75it/s]2025-10-14 11:25:47,335 (rnn_train:429) INFO: (Steps: 99809) Finished 90807 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99810/100000 [08:01<01:50,  1.71it/s]2025-10-14 11:25:47,944 (rnn_train:429) INFO: (Steps: 99810) Finished 90808 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99811/100000 [08:02<01:48,  1.73it/s]2025-10-14 11:25:48,502 (rnn_train:429) INFO: (Steps: 99811) Finished 90809 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99812/100000 [08:03<01:47,  1.75it/s]2025-10-14 11:25:49,064 (rnn_train:429) INFO: (Steps: 99812) Finished 90810 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99813/100000 [08:03<01:47,  1.74it/s]2025-10-14 11:25:49,648 (rnn_train:429) INFO: (Steps: 99813) Finished 90811 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99814/100000 [08:04<01:49,  1.70it/s]2025-10-14 11:25:50,266 (rnn_train:429) INFO: (Steps: 99814) Finished 90812 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99815/100000 [08:04<01:47,  1.72it/s]2025-10-14 11:25:50,829 (rnn_train:429) INFO: (Steps: 99815) Finished 90813 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99816/100000 [08:05<01:47,  1.71it/s]2025-10-14 11:25:51,438 (rnn_train:429) INFO: (Steps: 99816) Finished 90814 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99817/100000 [08:06<01:49,  1.68it/s]2025-10-14 11:25:52,051 (rnn_train:429) INFO: (Steps: 99817) Finished 90815 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99818/100000 [08:06<01:48,  1.67it/s]2025-10-14 11:25:52,648 (rnn_train:429) INFO: (Steps: 99818) Finished 90816 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99819/100000 [08:07<01:47,  1.68it/s]2025-10-14 11:25:53,255 (rnn_train:429) INFO: (Steps: 99819) Finished 90817 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99820/100000 [08:07<01:49,  1.65it/s]2025-10-14 11:25:53,874 (rnn_train:429) INFO: (Steps: 99820) Finished 90818 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99821/100000 [08:08<01:49,  1.63it/s]2025-10-14 11:25:54,497 (rnn_train:429) INFO: (Steps: 99821) Finished 90819 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99822/100000 [08:09<01:48,  1.63it/s]2025-10-14 11:25:55,099 (rnn_train:429) INFO: (Steps: 99822) Finished 90820 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99823/100000 [08:09<01:49,  1.62it/s]2025-10-14 11:25:55,731 (rnn_train:429) INFO: (Steps: 99823) Finished 90821 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99824/100000 [08:10<01:48,  1.62it/s]2025-10-14 11:25:56,353 (rnn_train:429) INFO: (Steps: 99824) Finished 90822 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99825/100000 [08:10<01:48,  1.62it/s]2025-10-14 11:25:56,966 (rnn_train:429) INFO: (Steps: 99825) Finished 90823 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99826/100000 [08:11<01:45,  1.64it/s]2025-10-14 11:25:57,550 (rnn_train:429) INFO: (Steps: 99826) Finished 90824 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99827/100000 [08:12<01:42,  1.69it/s]2025-10-14 11:25:58,117 (rnn_train:429) INFO: (Steps: 99827) Finished 90825 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99828/100000 [08:12<01:41,  1.70it/s]2025-10-14 11:25:58,690 (rnn_train:429) INFO: (Steps: 99828) Finished 90826 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99829/100000 [08:13<01:41,  1.68it/s]2025-10-14 11:25:59,304 (rnn_train:429) INFO: (Steps: 99829) Finished 90827 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99830/100000 [08:13<01:40,  1.69it/s]2025-10-14 11:25:59,892 (rnn_train:429) INFO: (Steps: 99830) Finished 90828 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99831/100000 [08:14<01:40,  1.68it/s]2025-10-14 11:26:00,494 (rnn_train:429) INFO: (Steps: 99831) Finished 90829 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99832/100000 [08:15<01:40,  1.67it/s]2025-10-14 11:26:01,092 (rnn_train:429) INFO: (Steps: 99832) Finished 90830 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99833/100000 [08:15<01:38,  1.70it/s]2025-10-14 11:26:01,662 (rnn_train:429) INFO: (Steps: 99833) Finished 90831 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99834/100000 [08:16<01:39,  1.67it/s]2025-10-14 11:26:02,277 (rnn_train:429) INFO: (Steps: 99834) Finished 90832 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99835/100000 [08:16<01:37,  1.70it/s]2025-10-14 11:26:02,843 (rnn_train:429) INFO: (Steps: 99835) Finished 90833 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99836/100000 [08:17<01:35,  1.71it/s]2025-10-14 11:26:03,419 (rnn_train:429) INFO: (Steps: 99836) Finished 90834 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99837/100000 [08:17<01:34,  1.72it/s]2025-10-14 11:26:03,994 (rnn_train:429) INFO: (Steps: 99837) Finished 90835 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99838/100000 [08:18<01:35,  1.69it/s]2025-10-14 11:26:04,601 (rnn_train:429) INFO: (Steps: 99838) Finished 90836 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99839/100000 [08:19<01:35,  1.68it/s]2025-10-14 11:26:05,215 (rnn_train:429) INFO: (Steps: 99839) Finished 90837 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99840/100000 [08:19<01:33,  1.72it/s]2025-10-14 11:26:05,768 (rnn_train:429) INFO: (Steps: 99840) Finished 90838 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99841/100000 [08:20<01:36,  1.65it/s]2025-10-14 11:26:06,429 (rnn_train:429) INFO: (Steps: 99841) Finished 90839 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99842/100000 [08:21<01:36,  1.64it/s]2025-10-14 11:26:07,054 (rnn_train:429) INFO: (Steps: 99842) Finished 90840 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99843/100000 [08:21<01:37,  1.61it/s]2025-10-14 11:26:07,694 (rnn_train:429) INFO: (Steps: 99843) Finished 90841 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99844/100000 [08:22<01:36,  1.61it/s]2025-10-14 11:26:08,315 (rnn_train:429) INFO: (Steps: 99844) Finished 90842 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99845/100000 [08:22<01:33,  1.65it/s]2025-10-14 11:26:08,881 (rnn_train:429) INFO: (Steps: 99845) Finished 90843 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99846/100000 [08:23<01:33,  1.65it/s]2025-10-14 11:26:09,493 (rnn_train:429) INFO: (Steps: 99846) Finished 90844 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99847/100000 [08:24<01:33,  1.64it/s]2025-10-14 11:26:10,111 (rnn_train:429) INFO: (Steps: 99847) Finished 90845 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99848/100000 [08:24<01:31,  1.66it/s]2025-10-14 11:26:10,691 (rnn_train:429) INFO: (Steps: 99848) Finished 90846 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99849/100000 [08:25<01:31,  1.66it/s]2025-10-14 11:26:11,301 (rnn_train:429) INFO: (Steps: 99849) Finished 90847 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99850/100000 [08:25<01:28,  1.69it/s]2025-10-14 11:26:11,870 (rnn_train:429) INFO: (Steps: 99850) Finished 90848 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99851/100000 [08:26<01:30,  1.66it/s]2025-10-14 11:26:12,499 (rnn_train:429) INFO: (Steps: 99851) Finished 90849 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99852/100000 [08:27<01:29,  1.66it/s]2025-10-14 11:26:13,091 (rnn_train:429) INFO: (Steps: 99852) Finished 90850 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99853/100000 [08:27<01:26,  1.70it/s]2025-10-14 11:26:13,660 (rnn_train:429) INFO: (Steps: 99853) Finished 90851 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99854/100000 [08:28<01:25,  1.70it/s]2025-10-14 11:26:14,239 (rnn_train:429) INFO: (Steps: 99854) Finished 90852 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99855/100000 [08:28<01:24,  1.71it/s]2025-10-14 11:26:14,820 (rnn_train:429) INFO: (Steps: 99855) Finished 90853 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99856/100000 [08:29<01:24,  1.71it/s]2025-10-14 11:26:15,405 (rnn_train:429) INFO: (Steps: 99856) Finished 90854 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99857/100000 [08:29<01:23,  1.72it/s]2025-10-14 11:26:15,977 (rnn_train:429) INFO: (Steps: 99857) Finished 90855 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99858/100000 [08:30<01:22,  1.73it/s]2025-10-14 11:26:16,557 (rnn_train:429) INFO: (Steps: 99858) Finished 90856 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99859/100000 [08:31<01:21,  1.72it/s]2025-10-14 11:26:17,134 (rnn_train:429) INFO: (Steps: 99859) Finished 90857 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99860/100000 [08:31<01:22,  1.70it/s]2025-10-14 11:26:17,740 (rnn_train:429) INFO: (Steps: 99860) Finished 90858 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99861/100000 [08:32<01:22,  1.69it/s]2025-10-14 11:26:18,346 (rnn_train:429) INFO: (Steps: 99861) Finished 90859 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99862/100000 [08:32<01:21,  1.68it/s]2025-10-14 11:26:18,933 (rnn_train:429) INFO: (Steps: 99862) Finished 90860 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99863/100000 [08:33<01:20,  1.69it/s]2025-10-14 11:26:19,524 (rnn_train:429) INFO: (Steps: 99863) Finished 90861 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99864/100000 [08:34<01:21,  1.67it/s]2025-10-14 11:26:20,137 (rnn_train:429) INFO: (Steps: 99864) Finished 90862 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99865/100000 [08:34<01:19,  1.69it/s]2025-10-14 11:26:20,714 (rnn_train:429) INFO: (Steps: 99865) Finished 90863 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99866/100000 [08:35<01:22,  1.62it/s]2025-10-14 11:26:21,402 (rnn_train:429) INFO: (Steps: 99866) Finished 90864 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99867/100000 [08:36<01:22,  1.61it/s]2025-10-14 11:26:22,041 (rnn_train:429) INFO: (Steps: 99867) Finished 90865 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99868/100000 [08:36<01:21,  1.62it/s]2025-10-14 11:26:22,634 (rnn_train:429) INFO: (Steps: 99868) Finished 90866 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99869/100000 [08:37<01:20,  1.62it/s]2025-10-14 11:26:23,257 (rnn_train:429) INFO: (Steps: 99869) Finished 90867 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99870/100000 [08:37<01:21,  1.60it/s]2025-10-14 11:26:23,895 (rnn_train:429) INFO: (Steps: 99870) Finished 90868 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99871/100000 [08:38<01:18,  1.65it/s]2025-10-14 11:26:24,453 (rnn_train:429) INFO: (Steps: 99871) Finished 90869 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99872/100000 [08:39<01:16,  1.68it/s]2025-10-14 11:26:25,032 (rnn_train:429) INFO: (Steps: 99872) Finished 90870 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99873/100000 [08:39<01:15,  1.69it/s]2025-10-14 11:26:25,608 (rnn_train:429) INFO: (Steps: 99873) Finished 90871 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99874/100000 [08:40<01:15,  1.67it/s]2025-10-14 11:26:26,234 (rnn_train:429) INFO: (Steps: 99874) Finished 90872 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99875/100000 [08:40<01:14,  1.68it/s]2025-10-14 11:26:26,811 (rnn_train:429) INFO: (Steps: 99875) Finished 90873 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99876/100000 [08:41<01:12,  1.72it/s]2025-10-14 11:26:27,363 (rnn_train:429) INFO: (Steps: 99876) Finished 90874 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99877/100000 [08:41<01:12,  1.69it/s]2025-10-14 11:26:27,981 (rnn_train:429) INFO: (Steps: 99877) Finished 90875 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99878/100000 [08:42<01:12,  1.68it/s]2025-10-14 11:26:28,577 (rnn_train:429) INFO: (Steps: 99878) Finished 90876 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99879/100000 [08:43<01:11,  1.68it/s]2025-10-14 11:26:29,177 (rnn_train:429) INFO: (Steps: 99879) Finished 90877 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99880/100000 [08:43<01:10,  1.70it/s]2025-10-14 11:26:29,747 (rnn_train:429) INFO: (Steps: 99880) Finished 90878 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99881/100000 [08:44<01:11,  1.68it/s]2025-10-14 11:26:30,358 (rnn_train:429) INFO: (Steps: 99881) Finished 90879 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99882/100000 [08:44<01:08,  1.71it/s]2025-10-14 11:26:30,922 (rnn_train:429) INFO: (Steps: 99882) Finished 90880 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99883/100000 [08:45<01:08,  1.70it/s]2025-10-14 11:26:31,524 (rnn_train:429) INFO: (Steps: 99883) Finished 90881 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99884/100000 [08:46<01:08,  1.70it/s]2025-10-14 11:26:32,103 (rnn_train:429) INFO: (Steps: 99884) Finished 90882 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99885/100000 [08:46<01:07,  1.70it/s]2025-10-14 11:26:32,693 (rnn_train:429) INFO: (Steps: 99885) Finished 90883 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99886/100000 [08:47<01:07,  1.68it/s]2025-10-14 11:26:33,308 (rnn_train:429) INFO: (Steps: 99886) Finished 90884 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99887/100000 [08:47<01:08,  1.64it/s]2025-10-14 11:26:33,949 (rnn_train:429) INFO: (Steps: 99887) Finished 90885 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99888/100000 [08:48<01:08,  1.63it/s]2025-10-14 11:26:34,565 (rnn_train:429) INFO: (Steps: 99888) Finished 90886 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99889/100000 [08:49<01:08,  1.63it/s]2025-10-14 11:26:35,183 (rnn_train:429) INFO: (Steps: 99889) Finished 90887 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99890/100000 [08:49<01:08,  1.61it/s]2025-10-14 11:26:35,817 (rnn_train:429) INFO: (Steps: 99890) Finished 90888 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99891/100000 [08:50<01:06,  1.65it/s]2025-10-14 11:26:36,397 (rnn_train:429) INFO: (Steps: 99891) Finished 90889 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99892/100000 [08:50<01:04,  1.66it/s]2025-10-14 11:26:36,979 (rnn_train:429) INFO: (Steps: 99892) Finished 90890 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99893/100000 [08:51<01:03,  1.69it/s]2025-10-14 11:26:37,545 (rnn_train:429) INFO: (Steps: 99893) Finished 90891 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99894/100000 [08:52<01:02,  1.71it/s]2025-10-14 11:26:38,121 (rnn_train:429) INFO: (Steps: 99894) Finished 90892 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99895/100000 [08:52<01:00,  1.72it/s]2025-10-14 11:26:38,695 (rnn_train:429) INFO: (Steps: 99895) Finished 90893 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99896/100000 [08:53<01:00,  1.72it/s]2025-10-14 11:26:39,277 (rnn_train:429) INFO: (Steps: 99896) Finished 90894 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99897/100000 [08:53<01:00,  1.69it/s]2025-10-14 11:26:39,893 (rnn_train:429) INFO: (Steps: 99897) Finished 90895 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99898/100000 [08:54<01:01,  1.65it/s]2025-10-14 11:26:40,525 (rnn_train:429) INFO: (Steps: 99898) Finished 90896 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99899/100000 [08:55<01:00,  1.68it/s]2025-10-14 11:26:41,093 (rnn_train:429) INFO: (Steps: 99899) Finished 90897 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99900/100000 [08:55<00:58,  1.71it/s]2025-10-14 11:26:41,652 (rnn_train:429) INFO: (Steps: 99900) Finished 90898 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99901/100000 [08:56<00:58,  1.69it/s]2025-10-14 11:26:42,265 (rnn_train:429) INFO: (Steps: 99901) Finished 90899 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99902/100000 [08:56<00:57,  1.71it/s]2025-10-14 11:26:42,829 (rnn_train:429) INFO: (Steps: 99902) Finished 90900 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99903/100000 [08:57<00:57,  1.68it/s]2025-10-14 11:26:43,455 (rnn_train:429) INFO: (Steps: 99903) Finished 90901 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99904/100000 [08:58<00:57,  1.68it/s]2025-10-14 11:26:44,040 (rnn_train:429) INFO: (Steps: 99904) Finished 90902 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99905/100000 [08:58<00:55,  1.70it/s]2025-10-14 11:26:44,610 (rnn_train:429) INFO: (Steps: 99905) Finished 90903 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99906/100000 [08:59<00:55,  1.68it/s]2025-10-14 11:26:45,225 (rnn_train:429) INFO: (Steps: 99906) Finished 90904 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99907/100000 [08:59<00:55,  1.69it/s]2025-10-14 11:26:45,813 (rnn_train:429) INFO: (Steps: 99907) Finished 90905 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99908/100000 [09:00<00:54,  1.70it/s]2025-10-14 11:26:46,389 (rnn_train:429) INFO: (Steps: 99908) Finished 90906 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99909/100000 [09:00<00:53,  1.71it/s]2025-10-14 11:26:46,969 (rnn_train:429) INFO: (Steps: 99909) Finished 90907 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99910/100000 [09:01<00:53,  1.69it/s]2025-10-14 11:26:47,581 (rnn_train:429) INFO: (Steps: 99910) Finished 90908 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99911/100000 [09:02<00:52,  1.71it/s]2025-10-14 11:26:48,147 (rnn_train:429) INFO: (Steps: 99911) Finished 90909 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99912/100000 [09:02<00:49,  1.76it/s]2025-10-14 11:26:48,667 (rnn_train:429) INFO: (Steps: 99912) Finished 90910 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99913/100000 [09:03<00:50,  1.72it/s]2025-10-14 11:26:49,285 (rnn_train:429) INFO: (Steps: 99913) Finished 90911 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99914/100000 [09:03<00:50,  1.72it/s]2025-10-14 11:26:49,866 (rnn_train:429) INFO: (Steps: 99914) Finished 90912 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99915/100000 [09:04<00:50,  1.69it/s]2025-10-14 11:26:50,493 (rnn_train:429) INFO: (Steps: 99915) Finished 90913 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99916/100000 [09:05<00:49,  1.68it/s]2025-10-14 11:26:51,080 (rnn_train:429) INFO: (Steps: 99916) Finished 90914 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99917/100000 [09:05<00:49,  1.68it/s]2025-10-14 11:26:51,677 (rnn_train:429) INFO: (Steps: 99917) Finished 90915 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99918/100000 [09:06<00:48,  1.70it/s]2025-10-14 11:26:52,253 (rnn_train:429) INFO: (Steps: 99918) Finished 90916 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99919/100000 [09:06<00:48,  1.68it/s]2025-10-14 11:26:52,873 (rnn_train:429) INFO: (Steps: 99919) Finished 90917 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99920/100000 [09:07<00:48,  1.65it/s]2025-10-14 11:26:53,499 (rnn_train:429) INFO: (Steps: 99920) Finished 90918 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99921/100000 [09:08<00:47,  1.66it/s]2025-10-14 11:26:54,096 (rnn_train:429) INFO: (Steps: 99921) Finished 90919 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99922/100000 [09:08<00:46,  1.67it/s]2025-10-14 11:26:54,687 (rnn_train:429) INFO: (Steps: 99922) Finished 90920 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99923/100000 [09:09<00:46,  1.66it/s]2025-10-14 11:26:55,302 (rnn_train:429) INFO: (Steps: 99923) Finished 90921 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99924/100000 [09:09<00:45,  1.68it/s]2025-10-14 11:26:55,876 (rnn_train:429) INFO: (Steps: 99924) Finished 90922 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99925/100000 [09:10<00:44,  1.69it/s]2025-10-14 11:26:56,446 (rnn_train:429) INFO: (Steps: 99925) Finished 90923 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99926/100000 [09:11<00:44,  1.68it/s]2025-10-14 11:26:57,059 (rnn_train:429) INFO: (Steps: 99926) Finished 90924 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99927/100000 [09:11<00:43,  1.67it/s]2025-10-14 11:26:57,687 (rnn_train:429) INFO: (Steps: 99927) Finished 90925 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99928/100000 [09:12<00:43,  1.66it/s]2025-10-14 11:26:58,282 (rnn_train:429) INFO: (Steps: 99928) Finished 90926 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99929/100000 [09:12<00:42,  1.67it/s]2025-10-14 11:26:58,876 (rnn_train:429) INFO: (Steps: 99929) Finished 90927 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99930/100000 [09:13<00:42,  1.64it/s]2025-10-14 11:26:59,512 (rnn_train:429) INFO: (Steps: 99930) Finished 90928 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99931/100000 [09:14<00:41,  1.65it/s]2025-10-14 11:27:00,101 (rnn_train:429) INFO: (Steps: 99931) Finished 90929 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99932/100000 [09:14<00:40,  1.69it/s]2025-10-14 11:27:00,664 (rnn_train:429) INFO: (Steps: 99932) Finished 90930 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99933/100000 [09:15<00:40,  1.67it/s]2025-10-14 11:27:01,278 (rnn_train:429) INFO: (Steps: 99933) Finished 90931 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99934/100000 [09:15<00:40,  1.65it/s]2025-10-14 11:27:01,899 (rnn_train:429) INFO: (Steps: 99934) Finished 90932 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99935/100000 [09:16<00:38,  1.69it/s]2025-10-14 11:27:02,461 (rnn_train:429) INFO: (Steps: 99935) Finished 90933 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99936/100000 [09:17<00:37,  1.71it/s]2025-10-14 11:27:03,035 (rnn_train:429) INFO: (Steps: 99936) Finished 90934 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99937/100000 [09:17<00:36,  1.72it/s]2025-10-14 11:27:03,602 (rnn_train:429) INFO: (Steps: 99937) Finished 90935 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99938/100000 [09:18<00:36,  1.68it/s]2025-10-14 11:27:04,235 (rnn_train:429) INFO: (Steps: 99938) Finished 90936 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99939/100000 [09:18<00:35,  1.70it/s]2025-10-14 11:27:04,809 (rnn_train:429) INFO: (Steps: 99939) Finished 90937 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99940/100000 [09:19<00:35,  1.68it/s]2025-10-14 11:27:05,449 (rnn_train:429) INFO: (Steps: 99940) Finished 90938 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99941/100000 [09:20<00:36,  1.60it/s]2025-10-14 11:27:06,115 (rnn_train:429) INFO: (Steps: 99941) Finished 90939 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99942/100000 [09:20<00:35,  1.63it/s]2025-10-14 11:27:06,692 (rnn_train:429) INFO: (Steps: 99942) Finished 90940 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99943/100000 [09:21<00:34,  1.63it/s]2025-10-14 11:27:07,311 (rnn_train:429) INFO: (Steps: 99943) Finished 90941 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99944/100000 [09:21<00:34,  1.63it/s]2025-10-14 11:27:07,940 (rnn_train:429) INFO: (Steps: 99944) Finished 90942 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99945/100000 [09:22<00:33,  1.64it/s]2025-10-14 11:27:08,521 (rnn_train:429) INFO: (Steps: 99945) Finished 90943 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99946/100000 [09:23<00:32,  1.66it/s]2025-10-14 11:27:09,099 (rnn_train:429) INFO: (Steps: 99946) Finished 90944 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99947/100000 [09:23<00:32,  1.65it/s]2025-10-14 11:27:09,723 (rnn_train:429) INFO: (Steps: 99947) Finished 90945 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99948/100000 [09:24<00:31,  1.63it/s]2025-10-14 11:27:10,343 (rnn_train:429) INFO: (Steps: 99948) Finished 90946 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99949/100000 [09:24<00:30,  1.67it/s]2025-10-14 11:27:10,911 (rnn_train:429) INFO: (Steps: 99949) Finished 90947 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99950/100000 [09:25<00:30,  1.65it/s]2025-10-14 11:27:11,530 (rnn_train:429) INFO: (Steps: 99950) Finished 90948 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99951/100000 [09:26<00:29,  1.64it/s]2025-10-14 11:27:12,152 (rnn_train:429) INFO: (Steps: 99951) Finished 90949 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99952/100000 [09:26<00:29,  1.63it/s]2025-10-14 11:27:12,778 (rnn_train:429) INFO: (Steps: 99952) Finished 90950 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99953/100000 [09:27<00:28,  1.67it/s]2025-10-14 11:27:13,340 (rnn_train:429) INFO: (Steps: 99953) Finished 90951 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99954/100000 [09:27<00:27,  1.67it/s]2025-10-14 11:27:13,939 (rnn_train:429) INFO: (Steps: 99954) Finished 90952 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99955/100000 [09:28<00:26,  1.67it/s]2025-10-14 11:27:14,534 (rnn_train:429) INFO: (Steps: 99955) Finished 90953 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99956/100000 [09:29<00:25,  1.70it/s]2025-10-14 11:27:15,102 (rnn_train:429) INFO: (Steps: 99956) Finished 90954 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99957/100000 [09:29<00:25,  1.71it/s]2025-10-14 11:27:15,683 (rnn_train:429) INFO: (Steps: 99957) Finished 90955 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99958/100000 [09:30<00:25,  1.68it/s]2025-10-14 11:27:16,303 (rnn_train:429) INFO: (Steps: 99958) Finished 90956 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99959/100000 [09:30<00:24,  1.67it/s]2025-10-14 11:27:16,911 (rnn_train:429) INFO: (Steps: 99959) Finished 90957 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99960/100000 [09:31<00:23,  1.68it/s]2025-10-14 11:27:17,492 (rnn_train:429) INFO: (Steps: 99960) Finished 90958 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99961/100000 [09:32<00:22,  1.70it/s]2025-10-14 11:27:18,056 (rnn_train:429) INFO: (Steps: 99961) Finished 90959 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99962/100000 [09:32<00:22,  1.73it/s]2025-10-14 11:27:18,620 (rnn_train:429) INFO: (Steps: 99962) Finished 90960 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99963/100000 [09:33<00:21,  1.73it/s]2025-10-14 11:27:19,194 (rnn_train:429) INFO: (Steps: 99963) Finished 90961 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99964/100000 [09:33<00:20,  1.73it/s]2025-10-14 11:27:19,776 (rnn_train:429) INFO: (Steps: 99964) Finished 90962 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99965/100000 [09:34<00:20,  1.69it/s]2025-10-14 11:27:20,393 (rnn_train:429) INFO: (Steps: 99965) Finished 90963 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99966/100000 [09:34<00:20,  1.68it/s]2025-10-14 11:27:20,995 (rnn_train:429) INFO: (Steps: 99966) Finished 90964 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99967/100000 [09:35<00:19,  1.67it/s]2025-10-14 11:27:21,612 (rnn_train:429) INFO: (Steps: 99967) Finished 90965 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99968/100000 [09:36<00:19,  1.67it/s]2025-10-14 11:27:22,215 (rnn_train:429) INFO: (Steps: 99968) Finished 90966 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99969/100000 [09:36<00:19,  1.61it/s]2025-10-14 11:27:22,883 (rnn_train:429) INFO: (Steps: 99969) Finished 90967 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99970/100000 [09:37<00:18,  1.65it/s]2025-10-14 11:27:23,459 (rnn_train:429) INFO: (Steps: 99970) Finished 90968 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99971/100000 [09:38<00:17,  1.68it/s]2025-10-14 11:27:24,020 (rnn_train:429) INFO: (Steps: 99971) Finished 90969 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99972/100000 [09:38<00:16,  1.72it/s]2025-10-14 11:27:24,568 (rnn_train:429) INFO: (Steps: 99972) Finished 90970 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99973/100000 [09:39<00:15,  1.74it/s]2025-10-14 11:27:25,126 (rnn_train:429) INFO: (Steps: 99973) Finished 90971 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99974/100000 [09:39<00:15,  1.72it/s]2025-10-14 11:27:25,728 (rnn_train:429) INFO: (Steps: 99974) Finished 90972 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99975/100000 [09:40<00:14,  1.73it/s]2025-10-14 11:27:26,291 (rnn_train:429) INFO: (Steps: 99975) Finished 90973 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99976/100000 [09:40<00:13,  1.74it/s]2025-10-14 11:27:26,867 (rnn_train:429) INFO: (Steps: 99976) Finished 90974 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99977/100000 [09:41<00:13,  1.71it/s]2025-10-14 11:27:27,473 (rnn_train:429) INFO: (Steps: 99977) Finished 90975 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99978/100000 [09:42<00:12,  1.72it/s]2025-10-14 11:27:28,044 (rnn_train:429) INFO: (Steps: 99978) Finished 90976 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99979/100000 [09:42<00:12,  1.74it/s]2025-10-14 11:27:28,599 (rnn_train:429) INFO: (Steps: 99979) Finished 90977 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99980/100000 [09:43<00:11,  1.72it/s]2025-10-14 11:27:29,203 (rnn_train:429) INFO: (Steps: 99980) Finished 90978 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99981/100000 [09:43<00:10,  1.74it/s]2025-10-14 11:27:29,748 (rnn_train:429) INFO: (Steps: 99981) Finished 90979 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99982/100000 [09:44<00:10,  1.74it/s]2025-10-14 11:27:30,344 (rnn_train:429) INFO: (Steps: 99982) Finished 90980 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99983/100000 [09:44<00:09,  1.72it/s]2025-10-14 11:27:30,924 (rnn_train:429) INFO: (Steps: 99983) Finished 90981 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99984/100000 [09:45<00:09,  1.74it/s]2025-10-14 11:27:31,498 (rnn_train:429) INFO: (Steps: 99984) Finished 90982 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99985/100000 [09:46<00:08,  1.74it/s]2025-10-14 11:27:32,073 (rnn_train:429) INFO: (Steps: 99985) Finished 90983 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99986/100000 [09:46<00:08,  1.74it/s]2025-10-14 11:27:32,637 (rnn_train:429) INFO: (Steps: 99986) Finished 90984 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99987/100000 [09:47<00:07,  1.74it/s]2025-10-14 11:27:33,206 (rnn_train:429) INFO: (Steps: 99987) Finished 90985 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99988/100000 [09:47<00:07,  1.69it/s]2025-10-14 11:27:33,856 (rnn_train:429) INFO: (Steps: 99988) Finished 90986 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99989/100000 [09:48<00:06,  1.65it/s]2025-10-14 11:27:34,488 (rnn_train:429) INFO: (Steps: 99989) Finished 90987 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99990/100000 [09:49<00:05,  1.68it/s]2025-10-14 11:27:35,054 (rnn_train:429) INFO: (Steps: 99990) Finished 90988 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99991/100000 [09:49<00:05,  1.69it/s]2025-10-14 11:27:35,636 (rnn_train:429) INFO: (Steps: 99991) Finished 90989 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99992/100000 [09:50<00:04,  1.69it/s]2025-10-14 11:27:36,232 (rnn_train:429) INFO: (Steps: 99992) Finished 90990 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99993/100000 [09:50<00:04,  1.69it/s]2025-10-14 11:27:36,825 (rnn_train:429) INFO: (Steps: 99993) Finished 90991 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99994/100000 [09:51<00:03,  1.67it/s]2025-10-14 11:27:37,433 (rnn_train:429) INFO: (Steps: 99994) Finished 90992 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99995/100000 [09:52<00:02,  1.68it/s]2025-10-14 11:27:38,019 (rnn_train:429) INFO: (Steps: 99995) Finished 90993 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99996/100000 [09:52<00:02,  1.67it/s]2025-10-14 11:27:38,630 (rnn_train:429) INFO: (Steps: 99996) Finished 90994 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99997/100000 [09:53<00:01,  1.70it/s]2025-10-14 11:27:39,203 (rnn_train:429) INFO: (Steps: 99997) Finished 90995 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99998/100000 [09:53<00:01,  1.70it/s]2025-10-14 11:27:39,782 (rnn_train:429) INFO: (Steps: 99998) Finished 90996 epoch training (1 steps per epoch).
+[train]: 100%|█████████▉| 99999/100000 [09:54<00:00,  1.71it/s]2025-10-14 11:27:40,359 (rnn_train:429) INFO: (Steps: 99999) Finished 90997 epoch training (1 steps per epoch).
+[train]: 100%|██████████| 100000/100000 [09:54<00:00,  1.69it/s]2025-10-14 11:27:40,928 (rnn_train:533) INFO: (Steps: 100000) train/total_loss = 0.1094.
+2025-10-14 11:27:40,930 (rnn_train:449) INFO: (Steps: 100000) Start evaluation.
+
+[eval]:   0%|          | 0/1 [00:00<?, ?it/s][A2025-10-14 11:27:41,645 (summary:40) INFO: Summary name rb,gb hat is illegal; using rb_gb_hat instead.
+
+[eval]: 100%|██████████| 1/1 [00:00<00:00,  1.29it/s][A[eval]: 100%|██████████| 1/1 [00:00<00:00,  1.20it/s]
+2025-10-14 11:27:41,764 (rnn_train:464) INFO: (Steps: 100000) Finished evaluation (1 steps per epoch).
+2025-10-14 11:27:41,764 (rnn_train:471) INFO: (Steps: 100000) eval/total_loss = 0.1015.
+2025-10-14 11:27:42,925 (rnn_train:523) INFO: Successfully saved checkpoint @ 100000 steps.
+[train]: 100%|██████████| 100000/100000 [09:57<00:00,  1.68it/s]
+2025-10-14 11:27:42,970 (rnn_train:318) INFO: Finished training.
+2025-10-14 11:27:43,958 (rnn_train:763) INFO: Successfully saved checkpoint @ 100000steps.
