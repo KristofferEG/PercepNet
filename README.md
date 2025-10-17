@@ -16,6 +16,19 @@ Some files to explore:
 Remember to use sbatch when starting jobs, as it does not require you to maintain a connection to the HPC while it is training.
 
 
+On top of the previously mentioned files, the following files are not present in the original PercepNet:
+- visualize_training.py
+- analyze_results.py
+- All files in the training visualizations folder
+
+There have also made some changes to the original code:
+- The checkpoints are now created as .pt files instead of .pkl files, to ensure proper requeuing. The checkpoint that has done the most iterations, is the converted back into a .pkl file to ensure compatability with the rest of the code
+- The DNS challenge data will not be passed correctly to the right location upon first installation and run. Instead it will be looking for a file named training_set_sept12_500h. Rewire this to the dataset you create using the DNS dataset.
+
+
+All files named either training or deploy followed by a number, are files related to the actual training performed on the AI-LAB machine. The number is the job-id created in AI-lab for the task. If the number includes a "_" followed by a number, it means that the task was performed with requeuing. The number following "_" tells how many times the task was requeued.
+
+
 # PercepNet
 Unofficial implementation of PercepNet: A Perceptually-Motivated Approach for Low-Complexity, Real-Time Enhancement of Fullband Speech described in https://arxiv.org/abs/2008.04259
 
