@@ -1,0 +1,11 @@
+PercepNet Perceptual Quality Evaluation
+============================================================
+
+Enhanced file: output_100k_48kHz.wav
+Duration: 19.80s @ 48000Hz
+
+DNSMOS P.835 (Non-intrusive):
+  SIG (Signal):     2.22
+  BAK (Background): 3.84
+  OVR (Overall):    2.00
+

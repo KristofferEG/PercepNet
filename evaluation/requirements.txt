@@ -1,0 +1,22 @@
+# Requirements for PercepNet Inference and Evaluation
+
+# Core dependencies
+numpy>=1.19.0
+librosa>=0.8.0
+soundfile>=0.10.0
+matplotlib>=3.3.0
+
+# Deep learning (for ML framework integration)
+tensorflow>=2.4.0
+
+# Metrics
+pesq>=0.0.3
+
+# DNSMOS non-intrusive metrics
+onnxruntime>=1.8.0
+
+# Data handling (for standalone scripts)
+pandas>=1.1.0
+
+# Optional: ML training framework
+# ml_training_framework  # Only needed if using with training framework
